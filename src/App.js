@@ -1,9 +1,13 @@
 import React from 'react';
 
+import { Route } from 'react-router-dom';
+
+import Header from './components/head/Header';
+
 const App = () => {
   return (
     <div>
-      <h1>Portfolio 2020</h1>
+      <Header />
     </div>
   );
 };
