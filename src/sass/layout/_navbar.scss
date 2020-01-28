@@ -1,0 +1,41 @@
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 100rem;
+
+  &__logo-box {
+  }
+
+  &__logo {
+    position: relative;
+    color: $font-color-secondary;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-family-secondary;
+    font-size: $font-text-sm;
+    font-weight: bolder;
+  }
+
+  // &__heading-primary--name {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0%;
+  //   left: 10%;
+  //   overflow: hidden;
+  // }
+
+  // &__heading-primary--last {
+  //   content: '';
+  //   position: absolute;
+  //   top: 10%;
+  //   left: 0%;
+  //   overflow: hidden;
+  // }
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+}
