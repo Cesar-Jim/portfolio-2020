@@ -9,8 +9,24 @@ $font-text-md: 1.4rem;
 $font-text-lg: 1.6rem;
 
 // ********************************************** COLORS
-$color-body: #fff;
 
-$font-color-secondary: #e6795c;
+$color-primary: #689eb8;
+$color-primary-light: lighten($color-primary, 15%);
+$color-primary-dark: darken($color-primary, 15%);
 
-$color-border-header: #e2e2e2;
+$color-secondary: #f3f4f6;
+$color-secondary-light: lighten($color-secondary, 15%);
+$color-secondary-dark: darken($color-secondary, 15%);
+
+$color-tertiary: #a79b94;
+$color-tertiary-light: lighten($color-tertiary, 15%);
+$color-tertiary-dark: darken($color-tertiary, 15%);
+
+$color-call-to-action: #ff5a60;
+
+$color-gray-light: #e5e5e5;
+$color-gray-medium: #8a8a8a;
+$color-gray-dark: #454545;
+
+$color-font-light: #fafafa;
+$color-font-dark: #363636;
