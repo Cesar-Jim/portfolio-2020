@@ -1,4 +1,107 @@
 .header {
-  border-top: 1px solid $color-gray-light;
-  height: 85vh;
+  align-items: center;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-background-light, 0.25),
+    rgba($color-background-dark, 0.15)
+  );
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  height: 60vh;
+  justify-content: space-between;
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+  }
+
+  &__heading-primary {
+    text-align: left;
+    margin-bottom: 3rem;
+
+    &--main {
+      font-size: 8rem;
+      font-family: 'Crimson Text', sans-serif;
+      font-weight: 400;
+      margin-bottom: -2rem;
+    }
+
+    &--sub {
+      font-size: 1.4rem;
+      font-family: 'Open Sans', serif;
+      font-weight: 400;
+      text-align: right;
+      text-transform: uppercase;
+    }
+  }
+
+  &__paragraph-box {
+    padding-bottom: 3rem;
+    width: 43rem;
+  }
+
+  &__heading-primary {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image-box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 50%;
+    background-color: $color-background-dark;
+  }
+
+  &__primary-image {
+    background-color: #657b8b;
+    opacity: 0.85;
+    border-radius: 50%;
+    height: 25rem;
+    width: 25rem;
+  }
+
+  &__secondary-image {
+    position: absolute;
+    top: 12rem;
+    left: 14rem;
+    height: 7rem;
+    width: 20rem;
+    transform: rotate(-15deg);
+  }
+
+  &__social-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 25%;
+
+    &--github,
+    &--linkedin {
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+      box-shadow: 3px 4px 4px #3b3b3b;
+      transition: all 0.1s linear;
+      border: 1px solid white;
+
+      &:hover {
+        position: relative;
+        box-shadow: 10px 10px 8px #888888;
+        transform: translateY(-2px);
+      }
+    }
+
+    &--linkedin {
+      background-color: #0068b9;
+    }
+  }
 }

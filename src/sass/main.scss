@@ -2,8 +2,11 @@
 
 @import './base/base';
 @import './base/typography';
+@import './base/animation';
 
 @import './layout/header';
 @import './layout/navbar';
 
 @import './Pages/home';
+
+@import './components/button';

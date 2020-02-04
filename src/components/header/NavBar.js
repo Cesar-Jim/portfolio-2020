@@ -3,7 +3,11 @@ import React from 'react';
 const NavBar = () => (
   <nav className='navbar'>
     <div className='navbar__logo-box'>
-      <img className='navbar__logo' src='/images/logo-cesar.png' alt='Logo' />
+      <img
+        className='navbar__logo'
+        src='/images/logo-placeholder.png'
+        alt='Logo'
+      />
     </div>
     <div className='navbar__list-box'>
       <ul className='navbar__list'>

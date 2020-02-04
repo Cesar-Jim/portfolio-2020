@@ -11,22 +11,26 @@ $font-text-lg: 1.6rem;
 // ********************************************** COLORS
 
 $color-primary: #689eb8;
-$color-primary-light: lighten($color-primary, 15%);
-$color-primary-dark: darken($color-primary, 15%);
+$color-primary-light: lighten($color-primary, 10%);
+$color-primary-dark: darken($color-primary, 10%);
 
 $color-secondary: #f3f4f6;
-$color-secondary-light: lighten($color-secondary, 15%);
-$color-secondary-dark: darken($color-secondary, 15%);
+$color-secondary-light: lighten($color-secondary, 10%);
+$color-secondary-dark: darken($color-secondary, 10%);
 
 $color-tertiary: #a79b94;
-$color-tertiary-light: lighten($color-tertiary, 15%);
-$color-tertiary-dark: darken($color-tertiary, 15%);
+$color-tertiary-light: lighten($color-tertiary, 10%);
+$color-tertiary-dark: darken($color-tertiary, 10%);
 
-$color-call-to-action: #ff5a60;
+$color-call-to-action: #eb6d4c;
 
 $color-gray-light: #e5e5e5;
 $color-gray-medium: #8a8a8a;
 $color-gray-dark: #454545;
 
 $color-font-light: #fafafa;
-$color-font-dark: #363636;
+$color-font-dark: #2a2e39;
+
+$color-background-light: #e5e5e5;
+$color-background-medium: #8a8a8a;
+$color-background-dark: #2a2e39;
