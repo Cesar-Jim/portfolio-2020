@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Main = () =>  (
+import Skills from './Skills';
+
+const Main = () => (
   <main>
-  
+    <Skills />
   </main>
-)
+);
 
 export default Main;
