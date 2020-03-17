@@ -2,6 +2,7 @@
   & // this meas the simple button (no pseudo-classes)
  {
     /* link is a special state of a selector when it is an anchor element */
+    box-shadow: 5px 6px 8px rgba(#000, 0.6);
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 4rem;
@@ -9,32 +10,29 @@
     border-radius: 10rem; /* set a very high number to get kind of a ellipse shape */
 
     /* Animate the shadow of the button */
-    transition: all 0.2s; /* the transition property has to be inside the initial state*/
+    transition: all 0.1s linear; /* the transition property has to be inside the initial state*/
 
     /* set a relative position as reference to the after .btn */
     position: relative;
     font-size: $font-text-md;
 
     // change for the <button> element
-    border: none;
+    border: 1px solid rgba(#000, 0.8);
     cursor: pointer;
   }
 
   &:hover {
     transform: translateY(-3px); /* in relation to the link state */
-    box-shadow: 0 1rem 2rem rgba(#000, 0.2);
-
-    &::after {
-      transform: scaleX(1.4) scaleY(1.6);
-      opacity: 0;
-    }
+    box-shadow: 12px 12px 12px rgba(#000, 0.5);
   }
 
-  &:active,
   &:focus {
     outline: none;
-    transform: translateY(-1px); /* in relation to the link state*/
-    box-shadow: 0 0.5rem 1rem rgba(#000, 0.2);
+
+    &:active {
+      transform: translateY(-1px); /* in relation to the link state*/
+      box-shadow: 4px 4px 8px rgba(#000, 0.65);
+    }
   }
 
   &--white {

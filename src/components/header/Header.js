@@ -63,7 +63,7 @@ const Header = () => (
         alt='Cesar Jimenez'
       />
       <a href='#' className='btn btn--white btn--animated'>
-        Email Me
+        Contact
       </a>
     </div>
   </header>
