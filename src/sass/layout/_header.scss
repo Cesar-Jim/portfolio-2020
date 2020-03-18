@@ -71,7 +71,7 @@
   }
 
   &__secondary-image {
-    filter: drop-shadow(2px 3px 1px rgba($color-call-to-action, 0.75));
+    filter: drop-shadow(2px 3px 1px rgba($color-call-to-action, 1));
     position: absolute;
     top: 12rem;
     left: 14rem;

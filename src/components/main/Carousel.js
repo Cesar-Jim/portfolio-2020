@@ -33,12 +33,17 @@ const Carousel = () => (
         style={{ display: 'block', width: '100%' }}
       />
       <img
+        src='/images/apps/natours.png'
+        alt='Natours'
+        style={{ display: 'block', width: '100%' }}
+      />
+
+      <img
         src='/images/apps/cb-homes.png'
         alt='Coldwell-Banker'
         data-action='https://www.coldwellbankerhomes.com/'
         style={{ display: 'block', width: '100%' }}
       />
-
       <img src='/images/apps/jams.png' alt='Jams' />
       <img src='/images/apps/cap-store.png' alt='Cortes Al Punto' />
       <img
