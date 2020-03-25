@@ -6,7 +6,7 @@ const Carousel = () => (
     <h2 className='projects__title'>Professional & Personal Projects</h2>
     <Coverflow
       width='860'
-      height='400'
+      height='460'
       displayQuantityOfSide={4}
       navigation={false}
       enableScroll={false}
@@ -53,7 +53,6 @@ const Carousel = () => (
         style={{ display: 'block', width: '100%' }}
       />
     </Coverflow>
-    ,
   </div>
 );
 

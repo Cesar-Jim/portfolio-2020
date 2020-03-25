@@ -2,10 +2,9 @@ import React from 'react';
 
 const Skills = () => (
   <div className='skills'>
-    <h2 className='skills__title'>Skills</h2>
+    {/*<h2 className='skills__title'>My Skills</h2>*/}
 
     <div className='skills__table-box'>
-      <div className='skills__empty-left'></div>
       <table className='skills__table'>
         <tbody className='skills__table-body'>
           <tr className='skills__table-row1'>
@@ -88,7 +87,6 @@ const Skills = () => (
           </tr>
         </tbody>
       </table>
-      <div className='skills__empty-right'></div>
     </div>
   </div>
 );

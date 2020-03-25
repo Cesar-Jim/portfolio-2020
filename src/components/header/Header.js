@@ -38,6 +38,7 @@ const Header = () => (
           <img
             className='header__social-box--github'
             src='/images/github.png'
+            alt='Github'
           />
         </a>
         <a
@@ -47,6 +48,7 @@ const Header = () => (
           <img
             className='header__social-box--linkedin'
             src='/images/linkedin.png'
+            alt='LinkedIn'
           />
         </a>
       </div>
@@ -62,7 +64,7 @@ const Header = () => (
         src='/images/cesar.png'
         alt='Cesar Jimenez'
       />
-      <a href='#' className='btn btn--white btn--animated'>
+      <a href='#contact-form' className='btn btn--white btn--animated'>
         Contact
       </a>
     </div>
