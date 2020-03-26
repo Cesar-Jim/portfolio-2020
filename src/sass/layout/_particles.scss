@@ -1,0 +1,7 @@
+.particles {
+  &__background {
+    filter: blur(0.2px);
+    position: absolute;
+    z-index: 1;
+  }
+}

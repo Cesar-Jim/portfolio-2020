@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactForm from '../main/ContactForm';
+import Particles from './Particles';
 
 const Heading = () => {
   return (
@@ -85,7 +86,8 @@ const ContactFormBox = () => {
 
 const Header = () => (
   <div>
-    <Heading />
+    <Particles />
+    <Heading style={{ backgroundColor: 'red' }} />
     <div>
       <header className='header'>
         <TextBox />

@@ -19,13 +19,17 @@
     flex-direction: column;
     justify-content: center;
     padding: 2rem 0 5rem 0;
+    background-color: transparent;
 
     &-image {
       background-color: rgba($color-font-dark, 0.3);
       border-radius: 50%;
+      box-shadow: 0 0 30px rgba(#000, 0.5);
       height: 16.5rem;
       margin: 2rem 0 -1.5rem 0;
+      opacity: 0.85;
       width: 16.5rem;
+      z-index: 2;
     }
 
     &-primary {
@@ -36,6 +40,7 @@
         font-family: 'Crimson Text', sans-serif;
         font-size: 10rem;
         font-weight: 400;
+        z-index: 2;
       }
 
       &--sub {
