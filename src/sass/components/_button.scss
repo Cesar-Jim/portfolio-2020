@@ -1,29 +1,20 @@
 .btn {
   & // this meas the simple button (no pseudo-classes)
  {
-    /* link is a special state of a selector when it is an anchor element */
+    border: 1px solid rgba($color-call-to-action, 1);
+    border-radius: 0.5rem;
     box-shadow: 5px 6px 8px rgba(#000, 0.6);
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    display: inline-block; /* research what inline-block does. It is creating some padding on the top and it has its own space */
-    border-radius: 10rem; /* set a very high number to get kind of a ellipse shape */
-
-    /* Animate the shadow of the button */
-    transition: all 0.1s linear; /* the transition property has to be inside the initial state*/
-
-    /* set a relative position as reference to the after .btn */
-    position: relative;
-    font-size: $font-text-md;
-
-    // change for the <button> element
-    border: 1px solid rgba(#000, 0.8);
     cursor: pointer;
+    font-size: $font-text-md;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.1s linear;
   }
 
   &:hover {
-    transform: translateY(-3px); /* in relation to the link state */
     box-shadow: 12px 12px 12px rgba(#000, 0.5);
+    transform: translateY(-3px); /* in relation to the link state */
   }
 
   &:focus {
@@ -33,34 +24,6 @@
       transform: translateY(-1px); /* in relation to the link state*/
       box-shadow: 4px 4px 8px rgba(#000, 0.65);
     }
-  }
-
-  &--white {
-    background-color: #fff;
-    color: $color-gray-dark;
-
-    &::after {
-      background-color: #fff;
-    }
-  }
-
-  /* The "after" pseudo-element adds like a virtual element right after the element that we are selecting */
-  /* after is basically treated as a child of .btn */
-  &::after {
-    content: ''; /* content and display are always required when after is used*/
-    display: inline-block; /* use inline-block because .btn is also inline-block*/
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-
-    /* set the after .btn behind the actual button with: */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-
-    /* the transition always goes in the initial state */
-    transition: all 0.4s;
   }
 
   &--animated {

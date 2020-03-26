@@ -1,39 +1,42 @@
 .contact-form {
-  &__box {
-    padding: 7rem 0;
-  }
-
   &__form {
-    border: 1px solid rgba($color-gray-light, 0.3);
-    border-radius: 15px;
-    box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 10rem auto;
-    width: 60rem;
+    width: 50rem;
     height: 60rem;
   }
 
   &__title {
+    align-self: center;
+    color: $color-gray-light;
+    font-family: $font-family-primary;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
     margin: 0 0 3rem 0;
   }
 
   &__name,
   &__email,
   &__message {
+    color: $color-font-dark;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 400;
     padding: 1.2rem;
     border: 1px solid rgba($color-gray-light, 0.7);
     box-sizing: border-box;
-    border-radius: 20px 20px 20px 20px;
-    margin: 1.5rem 0;
-    width: 80%;
-    transition: all 0.5s ease-in-out;
+    border-radius: 20px;
+    margin: 2.9rem 0;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
 
     &:focus {
       outline: none;
-      border: 1px solid rgba($color-call-to-action, 0.6);
+      border: 1px solid rgba($color-call-to-action, 1);
     }
   }
 
@@ -46,7 +49,14 @@
   }
 }
 
-.btn.btn--submit {
-  width: 30%;
-  margin: 0 auto;
+.btn--submit {
+  align-self: flex-end;
+  background-color: $color-call-to-action-dark;
+  color: $color-secondary;
+  margin: 1.5rem 0 0 0;
+
+  &:hover {
+    background-color: $color-call-to-action-light;
+    color: $color-call-to-action;
+  }
 }

@@ -57,7 +57,7 @@ const ContactForm = () => {
         id='contact-form'
         onSubmit={handleSubmit}
       >
-        <h2 className='contact-form__title'>Send a message</h2>
+        <h2 className='contact-form__title'>Contact Me</h2>
 
         <input
           className='contact-form__name'
@@ -87,11 +87,7 @@ const ContactForm = () => {
           {...bindMessage}
           required
         ></textarea>
-        <input
-          className='btn btn--submit btn--animated'
-          type='submit'
-          value='Submit'
-        />
+        <input className='btn btn--submit' type='submit' value='Send' />
       </form>
     </div>
   );
