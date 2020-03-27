@@ -53,7 +53,6 @@ const HeaderParticles = () => {
 
   const handleResize = () => {
     setWidth(window.innerWidth - 100);
-    console.log(window.innerWidth);
   };
 
   window.addEventListener('resize', handleResize);
