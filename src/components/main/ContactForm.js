@@ -47,6 +47,9 @@ const ContactForm = () => {
       )
       .then(res => {
         setFormSubmitted(true);
+        setTimeout(() => {
+          setFormSubmitted(false);
+        }, 5000);
       })
       .catch(e => console.log('Failed to send message. Error: ', e));
   };
@@ -59,9 +62,13 @@ const ContactForm = () => {
         onSubmit={handleSubmit}
       >
         <h2 className='contact-form__title'>Contact Me</h2>
-        {formSubmitted && (
-          <p className='contact-form__message-sent'>
+        {formSubmitted ? (
+          <p className='contact-form__message-sent--active'>
             Your message has been sent.
+          </p>
+        ) : (
+          <p className='contact-form__message-sent'>
+            Success! Your message has been sent.
           </p>
         )}
         <input

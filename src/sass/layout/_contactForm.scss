@@ -48,6 +48,10 @@
     resize: none;
 
     &-sent {
+      opacity: 0;
+      font-size: 1.6rem;
+    }
+    &-sent--active {
       color: $color-call-to-action;
       font-size: 1.6rem;
     }
