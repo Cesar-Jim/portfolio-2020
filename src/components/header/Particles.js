@@ -30,7 +30,7 @@ const particleOpt = {
     move: {
       enable: true,
       direction: 'left',
-      speed: 0.5
+      speed: 1.5
     }
   },
   interactivity: {
