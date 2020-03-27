@@ -11,6 +11,7 @@ const ContactForm = () => {
 
   const handleSubmit = event => {
     event.preventDefault();
+    setFormSubmitted(false);
 
     const {
       REACT_APP_EMAILJS_TEMPLATEID: template,
@@ -58,7 +59,11 @@ const ContactForm = () => {
         onSubmit={handleSubmit}
       >
         <h2 className='contact-form__title'>Contact Me</h2>
-
+        {formSubmitted && (
+          <p className='contact-form__message-sent'>
+            Your message has been sent.
+          </p>
+        )}
         <input
           className='contact-form__name'
           type='text'
