@@ -3,8 +3,9 @@ import Coverflow from 'react-coverflow';
 
 const Carousel = () => (
   <div>
-    <h2 className='projects__title'>Professional & Personal Projects</h2>
+    <h2 className='projects__title'>Projects</h2>
     <Coverflow
+      className='coverflow'
       width='860'
       height='460'
       displayQuantityOfSide={4}

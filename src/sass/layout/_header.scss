@@ -25,6 +25,7 @@
       background-color: rgba($color-font-dark, 0.3);
       border-radius: 50%;
       box-shadow: 0 0 30px rgba(#000, 0.5);
+      cursor: default;
       height: 16.5rem;
       margin: 2rem 0 -1.5rem 0;
       opacity: 0.85;
@@ -33,6 +34,7 @@
     }
 
     &-primary {
+      cursor: default;
       display: flex;
       flex-direction: column;
 

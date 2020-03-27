@@ -1,63 +1,49 @@
 .skills {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  //padding: 5rem 0;
-
-  &__table-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 15rem 0 4rem 0;
-    height: 100%;
-  }
+  margin: 20rem 0 0 0;
 
   &__title {
-    font-family: $font-family-primary;
-    font-size: 6rem;
-    font-weight: 700;
-    flex: 2;
-    letter-spacing: 0.4rem;
-    text-transform: uppercase;
-    transform: rotateZ(-60deg);
+    color: $color-font-dark;
+    font-family: $font-family-secondary;
+    font-size: 8rem;
+    font-weight: 400;
+    margin: 0 0 3rem 0;
   }
 
   &__table {
-    font-size: $font-text-md;
-    line-height: 2.5rem;
+    font-size: 1.7rem;
+    line-height: 3rem;
   }
 
-  &__table-row1,
-  &__table-row2 {
+  [class*='__table-row'] {
     display: flex;
     flex-direction: row;
-    margin-bottom: 4rem;
+    margin: 0;
   }
 
-  &__table-cell1-row1,
-  &__table-cell2-row1,
-  &__table-cell3-row1,
-  &__table-cell1-row2,
-  &__table-cell2-row2,
-  &__table-cell3-row2 {
+  [class*='__table-cell'] {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 40rem;
-    height: 35rem;
+    width: 48rem;
+    height: 48rem;
+    margin: 0 15px;
   }
 
   &__icon {
-    margin-bottom: 1.5rem;
-    height: 7rem;
-    width: 7rem;
+    height: 8rem;
+    margin: 0 0 1.5rem 0;
+    width: 8rem;
   }
 
   &__category {
-    font-size: 1.8rem;
-    font-weight: 400;
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin: 0 0 2rem 0;
   }
 
   &__cell-content {
