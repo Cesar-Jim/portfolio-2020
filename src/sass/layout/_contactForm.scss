@@ -1,22 +1,42 @@
 .contact-form {
   &__form {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: 60rem;
     justify-content: center;
     margin: 10rem auto;
     width: 45rem;
-    height: 60rem;
+
+    @include respond(tab-land) {
+      width: 30rem;
+    }
+
+    @include respond(phone) {
+      width: 28rem;
+    }
   }
 
   &__title {
     align-self: center;
     color: $color-gray-light;
     font-family: $font-family-primary;
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: 0.1rem;
-    margin: 0 0 3rem 0;
+    font-size: $font-contact-form-title-bd;
+    font-weight: 100;
+    padding: 1.5rem 0 3rem 0;
+
+    @include respond(tab-land) {
+      padding: 0 0 3rem 0;
+    }
+
+    @include respond(tab-port) {
+      font-size: $font-contact-form-title-tp;
+    }
+
+    @include respond(phone) {
+      font-size: $font-contact-form-title-ph;
+      margin: -1rem 0 3rem 0;
+    }
   }
 
   &__name,
@@ -24,23 +44,28 @@
   &__message {
     color: $color-font-dark;
     font-family: inherit;
-    font-size: 1.6rem;
+    font-size: $font-contact-form-input-bd;
     font-weight: 400;
-    padding: 0.7rem 1.2rem;
+    padding: 0.7rem 1.5rem;
     border: 1px solid rgba($color-gray-light, 0.7);
-    box-sizing: border-box;
     border-radius: 20px;
     margin: 2.9rem 0;
     width: 100%;
     transition: all 0.2s ease-in-out;
 
+    @include respond(tab-land) {
+      margin: 2.3rem 0;
+    }
+
+    @include respond(tab-land) {
+      font-size: $font-contact-form-input-tp;
+      margin: 2.7rem 0;
+    }
+
     &:focus {
       outline: none;
       border: 1px solid rgba($color-call-to-action, 1);
     }
-  }
-
-  &__email {
   }
 
   &__message {
@@ -49,11 +74,19 @@
 
     &-sent {
       opacity: 0;
-      font-size: 1.6rem;
+      font-size: $font-contact-form-message-sent-bd;
+
+      @include respond(tab-port) {
+        font-size: $font-contact-form-message-sent-tp;
+      }
     }
     &-sent--active {
       color: $color-call-to-action;
-      font-size: 1.6rem;
+      font-size: $font-contact-form-message-sent-bd;
+
+      @include respond(tab-port) {
+        font-size: $font-contact-form-message-sent-tp;
+      }
     }
   }
 }
@@ -63,6 +96,10 @@
   background-color: $color-call-to-action-dark;
   color: $color-secondary;
   margin: 1.5rem 0 0 0;
+
+  @include respond(tab-port) {
+    font-size: $font-contact-form-button-tp;
+  }
 
   &:hover {
     background-color: $color-call-to-action-light;

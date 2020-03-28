@@ -7,7 +7,7 @@ const particleOpt = {
   particles: {
     color: { value: particlesColor },
     number: {
-      value: 100
+      value: 70
     },
     density: {
       enable: false
@@ -52,7 +52,7 @@ const HeaderParticles = () => {
   const height = 372;
 
   const handleResize = () => {
-    setWidth(window.innerWidth - 100);
+    setWidth(window.innerWidth);
   };
 
   window.addEventListener('resize', handleResize);

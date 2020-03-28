@@ -1,19 +1,63 @@
 import React from 'react';
 import Coverflow from 'react-coverflow';
 
+const numberOfDisplayedImages = () => {
+  const windowWidth = window.innerWidth;
+  let displayQuantityOfSide = 0;
+
+  if (windowWidth > 1600) {
+    displayQuantityOfSide = 4;
+  }
+
+  if (windowWidth > 1300 && windowWidth <= 1600) {
+    displayQuantityOfSide = 3;
+  }
+
+  if (windowWidth > 800 && windowWidth <= 1300) {
+    displayQuantityOfSide = 2;
+  }
+
+  if (windowWidth <= 800) {
+    displayQuantityOfSide = 1;
+  }
+
+  console.log(displayQuantityOfSide);
+  return displayQuantityOfSide;
+};
+
+window.addEventListener('resize', numberOfDisplayedImages);
+
 const Carousel = () => (
   <div>
-    <h2 className='projects__title'>Projects</h2>
     <Coverflow
       className='coverflow'
-      width='860'
-      height='460'
-      displayQuantityOfSide={4}
+      displayQuantityOfSide={numberOfDisplayedImages()}
+      // width='100%'
+      // height='560px'
       navigation={false}
+      infiniteScroll
       enableScroll={false}
       clickable={true}
       active={0}
       enableHeading={true}
+      media={{
+        '@media (min-width: 1800px)': {
+          width: '100%',
+          height: '500px'
+        },
+        '@media (max-width: 1799px)': {
+          width: '100%',
+          height: '460px'
+        },
+        '@media (max-width: 799px)': {
+          width: '100%',
+          height: '500px'
+        },
+        '@media (max-width: 399px)': {
+          width: '100%',
+          height: '360px'
+        }
+      }}
     >
       <img
         src='/images/apps/tribe-app.png'

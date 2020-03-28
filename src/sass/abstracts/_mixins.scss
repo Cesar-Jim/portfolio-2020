@@ -1,0 +1,68 @@
+// MEDIA QUERY MANAGER
+
+/*
+Breakpoints:
+   0px -  800px     Phone
+ 800px - 1100px     Tablet (portrait)
+1100px - 1300px     Tablet (landscape)
+1300px - 1800px     Is where normal styles apply
+1800px - + px       Bigger screens
+
+**** "em" is the BEST unit for media queries ****
+
+// 1em = 16px
+//  800 / 16 = 50em
+// 1100 / 16 = 68.75em
+// 1300 / 16 = 81.25em
+// 1800 / 16 = 112.5em
+
+ORDER to apply media queries:
+1. Base & typography
+2. Layout & grid
+3. Page specific layout
+4. Component specific layout
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- desktop
+- big-desktop
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    // 800px
+    @media only screen and (max-width: 50em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    // 1100px
+    @media only screen and (max-width: 68.75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    // 1300px
+    @media only screen and (max-width: 81.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    // 1600px
+    @media only screen and (max-width: 100em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-desktop {
+    // 1800px and +
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

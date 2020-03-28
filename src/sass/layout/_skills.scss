@@ -2,25 +2,58 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 20rem 0 0 0;
+  margin: 10rem 0 0 0;
+
+  @include respond(phone) {
+    margin: 75rem 0 0 0;
+  }
 
   &__title {
     color: $color-font-dark;
     font-family: $font-family-primary;
-    font-size: 5rem;
+    font-size: $font-skills-title-bd;
     font-weight: 400;
-    margin: 0 0 3rem 0;
+    margin: 0 0 0 0;
+
+    @include respond(tab-port) {
+      font-size: $font-skills-title-tp;
+    }
+
+    @include respond(phone) {
+      font-size: $font-skills-title-ph;
+      margin: 0 0 3rem 0;
+    }
   }
 
   &__table {
-    font-size: 1.7rem;
+    font-size: $font-skills-table-text-bd;
     line-height: 3rem;
+
+    @include respond(desktop) {
+      font-size: $font-skills-table-text-de;
+    }
+
+    @include respond(tab-land) {
+      line-height: 2.7rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: $font-skills-table-text-tp;
+      line-height: 2.5rem;
+    }
+
+    @include respond(phone) {
+      font-size: $font-skills-table-text-ph;
+    }
   }
 
   [class*='__table-row'] {
     display: flex;
     flex-direction: row;
-    margin: 0;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
 
   [class*='__table-cell'] {
@@ -31,23 +64,73 @@
     text-align: center;
     width: 48rem;
     height: 48rem;
-    margin: 0 15px;
+    margin: 0 14px;
+
+    @include respond(desktop) {
+      width: 36rem;
+    }
+
+    @include respond(tab-land) {
+      width: 29rem;
+    }
+
+    @include respond(tab-port) {
+      height: 42rem;
+      width: 22rem;
+    }
+
+    @include respond(phone) {
+      height: 36rem;
+      width: 27rem;
+    }
   }
 
   &__icon {
     height: 8rem;
     margin: 0 0 1.5rem 0;
     width: 8rem;
+
+    @include respond(desktop) {
+      height: 6rem;
+      width: 6rem;
+    }
+
+    @include respond(tab-port) {
+      height: 5rem;
+      width: 5rem;
+    }
   }
 
   &__category {
-    font-family: inherit;
-    font-size: 2.6rem;
+    font-size: $font-skills-category-bd;
     font-weight: 700;
-    margin: 0 0 2rem 0;
+    margin: 0 0 5rem 0;
+
+    @include respond(tab-port) {
+      font-size: $font-skills-category-tp;
+    }
+
+    @include respond(phone) {
+      font-size: $font-skills-category-ph;
+      margin: 0 0 1.5rem 0;
+    }
   }
 
   &__cell-content {
-    padding: 3rem;
+    padding: 0 12rem 0 12rem;
+    text-align: center;
+    word-spacing: 0.6rem;
+
+    @include respond(desktop) {
+      padding: 0 6rem 0 6rem;
+    }
+
+    @include respond(tab-land) {
+      padding: 0 4.5rem 0 4.5rem;
+    }
+
+    @include respond(tab-land) {
+      padding: 0 1.5rem 0 1.5rem;
+    }
   }
 }

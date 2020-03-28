@@ -49,7 +49,7 @@ const ContactForm = () => {
         setFormSubmitted(true);
         setTimeout(() => {
           setFormSubmitted(false);
-        }, 5000);
+        }, 3000);
       })
       .catch(e => console.log('Failed to send message. Error: ', e));
   };
@@ -61,10 +61,10 @@ const ContactForm = () => {
         id='contact-form'
         onSubmit={handleSubmit}
       >
-        <h2 className='contact-form__title'>Contact Me</h2>
+        <h2 className='contact-form__title'>Contact me...</h2>
         {formSubmitted ? (
           <p className='contact-form__message-sent--active'>
-            Your message has been sent.
+            Success! Your message has been sent.
           </p>
         ) : (
           <p className='contact-form__message-sent'>
@@ -99,7 +99,7 @@ const ContactForm = () => {
           {...bindMessage}
           required
         ></textarea>
-        <input className='btn btn--submit' type='submit' value='Send' />
+        <input className='btn btn--submit' type='submit' value='Send →' />
       </form>
     </div>
   );

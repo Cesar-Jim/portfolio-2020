@@ -1,12 +1,12 @@
 import React from 'react';
 
 import Skills from './Skills';
-import Carousel from './Carousel';
+import Projects from './Projects';
 
 const Main = () => (
   <main>
     <Skills />
-    <Carousel />
+    <Projects />
   </main>
 );
 

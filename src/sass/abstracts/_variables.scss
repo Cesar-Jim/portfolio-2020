@@ -1,12 +1,77 @@
+// ********************************************** MEDIA QUERIES
+/*
+phone             = ph (  0px   -  800px )
+tablet portrait   = tp (  801px - 1100px )
+tablet landscape  = tl ( 1101px - 1300px )  
+desktop           = de ( 1301px - 1600px )
+big desktop       = bd ( 1601px - +      )
+*/
+
 // ********************************************** FONTS
-// Families
+// FONT FAMILIES
 $font-family-primary: 'Open Sans', sans-serif;
 $font-family-secondary: 'Crimson Text', serif;
 
-// Sizes
-$font-text-sm: 1.2rem;
-$font-text-md: 1.4rem;
-$font-text-lg: 1.6rem;
+// BUTTONS
+$font-button-bd: 1.4rem;
+
+// HEADER - BD
+$font-heading-main-title-bd: 10rem;
+$font-heading-sub-title-bd: 1.77rem;
+$font-text-box-title-bd: 2.7rem;
+$font-text-box-text-bd: 1.7rem;
+$font-contact-form-title-bd: 2.7rem;
+$font-contact-form-input-bd: 1.6rem;
+$font-contact-form-message-sent-bd: 1.6rem;
+$font-contact-form-button-bd: 1.4rem;
+
+// HEADER - TL
+$font-text-box-title-tl: 2.5rem;
+$font-text-box-text-tl: 1.5rem;
+
+// HEADER - TP
+$font-heading-main-title-tp: 6rem;
+$font-heading-sub-title-tp: 1.05rem;
+$font-text-box-title-tp: 2.1rem;
+$font-text-box-text-tp: 1.2rem;
+$font-contact-form-title-tp: 2.1rem;
+$font-contact-form-input-tp: 1.3rem;
+$font-contact-form-message-sent-tp: 1.4rem;
+$font-contact-form-button-tp: 1.2rem;
+
+// HEADER - PH
+$font-heading-main-title-ph: 5.9rem;
+$font-heading-sub-title-ph: 1.04rem;
+$font-text-box-title-ph: 1.8rem;
+$font-contact-form-title-ph: 1.8rem;
+
+// SKILLS - BD
+$font-skills-title-bd: 5rem;
+$font-skills-category-bd: 2.6rem;
+$font-skills-table-text-bd: 1.7rem;
+
+// SKILLS - DE
+$font-skills-category-de: 2.6rem;
+$font-skills-table-text-de: 1.5rem;
+
+// SKILLS - TL
+// nothing changes from SKILL - DE
+
+// SKILLS - TP
+$font-skills-title-tp: 3rem;
+$font-skills-category-tp: 2rem;
+$font-skills-table-text-tp: 1.4rem;
+
+// SKILLS - PH
+$font-skills-title-ph: 4rem;
+$font-skills-category-ph: 2.2rem;
+$font-skills-table-text-ph: 1.5rem;
+
+// PROJECTS - TP
+$font-projects-title-tp: 3rem;
+
+// PROJECTS - PH
+$font-projects-title-ph: 4rem;
 
 // ********************************************** COLORS
 
