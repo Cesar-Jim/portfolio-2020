@@ -17,6 +17,12 @@
     }
   }
 
+  &__box {
+    @include respond(phone) {
+      margin: 0 0 3rem 0;
+    }
+  }
+
   &__title {
     align-self: center;
     color: $color-gray-light;
@@ -35,7 +41,7 @@
 
     @include respond(phone) {
       font-size: $font-contact-form-title-ph;
-      margin: -1rem 0 3rem 0;
+      margin: 2rem 0 3rem 0;
     }
   }
 

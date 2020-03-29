@@ -17,6 +17,7 @@
 
   @include respond(phone) {
     flex-direction: column;
+    height: 63vh;
   }
 
   // HEADING
@@ -148,7 +149,6 @@
       @include respond(phone) {
         font-size: $font-text-box-title-ph;
         margin: 4rem 0 1rem 0;
-        padding: 4rem 0 0 0;
         text-align: center;
       }
     }
