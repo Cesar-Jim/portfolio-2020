@@ -58,7 +58,7 @@ const Carousel = () => (
       }}
     >
       <img
-        src='/images/apps/tribe-app.png'
+        src='/images/apps/tribe-app.PNG'
         alt='Tribe App'
         data-action='https://cesar-jimenez-tribeapp.herokuapp.com/'
         style={{ display: 'block', width: '100%' }}
