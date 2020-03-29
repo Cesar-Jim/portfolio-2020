@@ -64,33 +64,33 @@ const Carousel = () => (
         style={{ display: 'block', width: '100%' }}
       />
       <img
-        src='/images/apps/zaplabs.png'
+        src='/images/apps/zaplabs.PNG'
         alt='Zaplabs'
         data-action='https://new.myzap.com/'
         style={{ display: 'block', width: '100%' }}
       />
       <img
-        src='/images/apps/uva.png'
+        src='/images/apps/uva.PNG'
         alt='Uva'
         data-action='https://cesar-jimenez-uva.herokuapp.com/'
         style={{ display: 'block', width: '100%' }}
       />
       <img
-        src='/images/apps/natours.png'
+        src='/images/apps/natours.PNG'
         alt='Natours'
         style={{ display: 'block', width: '100%' }}
       />
 
       <img
-        src='/images/apps/cb-homes.png'
+        src='/images/apps/cb-homes.PNG'
         alt='Coldwell-Banker'
         data-action='https://www.coldwellbankerhomes.com/'
         style={{ display: 'block', width: '100%' }}
       />
-      <img src='/images/apps/jams.png' alt='Jams' />
-      <img src='/images/apps/cap-store.png' alt='Cortes Al Punto' />
+      <img src='/images/apps/jams.PNG' alt='Jams' />
+      <img src='/images/apps/cap-store.PNG' alt='Cortes Al Punto' />
       <img
-        src='/images/apps/blocipedia.png'
+        src='/images/apps/blocipedia.PNG'
         alt='Blocipedia'
         data-action='https://cesar-jimenez-blocipedia-node.herokuapp.com/'
         style={{ display: 'block', width: '100%' }}
