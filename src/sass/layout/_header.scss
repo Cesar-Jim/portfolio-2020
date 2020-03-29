@@ -8,7 +8,11 @@
   );
   display: flex;
   flex-direction: row;
-  height: 63vh;
+  height: 65vh;
+
+  @include respond(desktop) {
+    height: 67vh;
+  }
 
   @include respond(tab-port) {
     flex-direction: row;
@@ -17,7 +21,7 @@
 
   @include respond(phone) {
     flex-direction: column;
-    height: 63vh;
+    height: 64vh;
   }
 
   // HEADING

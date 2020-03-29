@@ -18,6 +18,10 @@
   }
 
   &__box {
+    @include respond(desktop) {
+      margin: 0 0 3rem 0;
+    }
+
     @include respond(phone) {
       margin: 0 0 3rem 0;
     }
