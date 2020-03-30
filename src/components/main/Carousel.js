@@ -32,7 +32,6 @@ const Carousel = () => (
     <Coverflow
       className='coverflow'
       displayQuantityOfSide={numberOfDisplayedImages()}
-      navigation={false}
       enableScroll={true}
       clickable={true}
       active={0}
