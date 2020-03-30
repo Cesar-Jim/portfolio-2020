@@ -2,18 +2,13 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 10rem 0 0 0;
-
-  @include respond(phone) {
-    margin: 75rem 0 0 0;
-  }
 
   &__title {
     color: $color-font-dark;
     font-family: $font-family-primary;
     font-size: $font-skills-title-bd;
     font-weight: 400;
-    margin: 0 0 0 0;
+    margin: 10rem 0 0 0;
 
     @include respond(tab-port) {
       font-size: $font-skills-title-tp;
@@ -21,7 +16,15 @@
 
     @include respond(phone) {
       font-size: $font-skills-title-ph;
-      margin: -10rem 0 3rem 0;
+      margin: 65rem 0 3rem 0;
+    }
+
+    @include respond(phone-small) {
+      //margin: 40rem 0 0 0;
+    }
+
+    @include respond(phone-tiny) {
+      margin: 75rem 0 0 0;
     }
   }
 
@@ -44,6 +47,10 @@
 
     @include respond(phone) {
       font-size: $font-skills-table-text-ph;
+    }
+
+    @include respond(phone-tiny) {
+      font-size: $font-skills-table-text-pt;
     }
   }
 

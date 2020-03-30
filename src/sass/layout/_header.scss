@@ -21,7 +21,12 @@
 
   @include respond(phone) {
     flex-direction: column;
-    height: 64vh;
+    height: 100vh;
+  }
+
+  @include respond(phone-small) {
+    flex-direction: column;
+    height: 120vh;
   }
 
   // HEADING
@@ -69,6 +74,10 @@
         @include respond(phone) {
           font-size: $font-heading-main-title-ph;
         }
+
+        @include respond(phone-tiny) {
+          font-size: $font-heading-main-title-pt;
+        }
       }
 
       &--sub {
@@ -84,8 +93,13 @@
           margin: -2rem 0 9.8rem 0;
         }
 
-        @include respond(tab-port) {
+        @include respond(phone) {
           font-size: $font-heading-sub-title-ph;
+        }
+
+        @include respond(phone-tiny) {
+          font-size: $font-heading-sub-title-pt;
+          margin: -1.7rem 0 12rem 0;
         }
       }
     }
@@ -113,6 +127,12 @@
 
     @include respond(phone) {
       width: 100%;
+      height: 35%;
+    }
+
+    @include respond(phone-small) {
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -132,8 +152,9 @@
     }
 
     @include respond(phone) {
-      width: 85%;
+      width: 80%;
       line-height: 1.9rem;
+      margin: 1rem 0 0 0;
     }
 
     &--title {
@@ -216,7 +237,7 @@
     background-color: $color-background-dark;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    //height: 100%;
     justify-content: center;
     width: 40%;
 
@@ -226,6 +247,7 @@
 
     @include respond(tab-port) {
       width: 50%;
+      height: 100%;
     }
 
     @include respond(phone) {

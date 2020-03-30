@@ -14,8 +14,8 @@ ReactGA.initialize(analyticsId);
 const App = () => {
   return (
     <div className='main-container'>
-      <Header />
-      <Main />
+      <Header className='main-container__header' />
+      <Main className='main-container__main' />
     </div>
   );
 };

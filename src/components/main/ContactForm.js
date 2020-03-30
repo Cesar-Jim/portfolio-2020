@@ -7,7 +7,7 @@ const ContactForm = () => {
   const { value: message, bind: bindMessage, reset: resetMessage } = useInput(
     ''
   );
-  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(true);
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -55,53 +55,51 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='contact-form__box'>
-      <form
-        className='contact-form__form'
-        id='contact-form'
-        onSubmit={handleSubmit}
-      >
-        <h2 className='contact-form__title'>Contact me...</h2>
-        {formSubmitted ? (
-          <p className='contact-form__message-sent--active'>
-            Success! Your message has been sent.
-          </p>
-        ) : (
-          <p className='contact-form__message-sent'>
-            Success! Your message has been sent.
-          </p>
-        )}
-        <input
-          className='contact-form__name'
-          type='text'
-          name='name'
-          placeholder='Full name'
-          {...bindName}
-          required
-        />
+    <form
+      className='contact-form__form'
+      id='contact-form'
+      onSubmit={handleSubmit}
+    >
+      <h2 className='contact-form__title'>Contact me...</h2>
+      {formSubmitted ? (
+        <p className='contact-form__message-sent--active'>
+          Success! Your message has been sent.
+        </p>
+      ) : (
+        <p className='contact-form__message-sent'>
+          Success! Your message has been sent.
+        </p>
+      )}
+      <input
+        className='contact-form__name'
+        type='text'
+        name='name'
+        placeholder='Full name'
+        {...bindName}
+        required
+      />
 
-        <input
-          className='contact-form__email'
-          type='email'
-          name='email'
-          placeholder='Email'
-          {...bindEmail}
-          required
-        />
+      <input
+        className='contact-form__email'
+        type='email'
+        name='email'
+        placeholder='Email'
+        {...bindEmail}
+        required
+      />
 
-        <textarea
-          className='contact-form__message'
-          name='message'
-          id='message'
-          cols='30'
-          rows='20'
-          placeholder='Your message'
-          {...bindMessage}
-          required
-        ></textarea>
-        <input className='btn btn--submit' type='submit' value='Send →' />
-      </form>
-    </div>
+      <textarea
+        className='contact-form__message'
+        name='message'
+        id='message'
+        cols='30'
+        rows='20'
+        placeholder='Your message'
+        {...bindMessage}
+        required
+      ></textarea>
+      <input className='btn btn--submit' type='submit' value='Send →' />
+    </form>
   );
 };
 

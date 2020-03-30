@@ -1,6 +1,8 @@
 // ********************************************** MEDIA QUERIES
 /*
-phone             = ph (  0px   -  800px )
+phone tiny        = pt (    0px -  400px )
+phone small       = ps (  401px -  600px )
+phone             = ph (  601px -  800px )
 tablet portrait   = tp (  801px - 1100px )
 tablet landscape  = tl ( 1101px - 1300px )  
 desktop           = de ( 1301px - 1600px )
@@ -45,6 +47,12 @@ $font-heading-sub-title-ph: 1.04rem;
 $font-text-box-title-ph: 1.8rem;
 $font-contact-form-title-ph: 1.8rem;
 
+// HEADER - PT
+$font-heading-main-title-pt: 4.9rem;
+$font-heading-sub-title-pt: 0.85rem;
+$font-text-box-title-pt: 1.8rem;
+$font-text-box-text-tp: 1.1rem;
+
 // SKILLS - BD
 $font-skills-title-bd: 5rem;
 $font-skills-category-bd: 2.6rem;
@@ -66,6 +74,9 @@ $font-skills-table-text-tp: 1.4rem;
 $font-skills-title-ph: 4rem;
 $font-skills-category-ph: 2.2rem;
 $font-skills-table-text-ph: 1.5rem;
+
+// SKILLS - PT
+$font-skills-table-text-pt: 1.2rem;
 
 // PROJECTS - TP
 $font-projects-title-tp: 3rem;

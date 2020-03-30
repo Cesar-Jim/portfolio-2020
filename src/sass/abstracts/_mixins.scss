@@ -2,7 +2,9 @@
 
 /*
 Breakpoints:
-   0px -  800px     Phone
+   0px -  400px     Phone tiny
+ 400px -  600px     Phone small
+ 600px -  800px     Phone
  800px - 1100px     Tablet (portrait)
 1100px - 1300px     Tablet (landscape)
 1300px - 1800px     Is where normal styles apply
@@ -11,6 +13,8 @@ Breakpoints:
 **** "em" is the BEST unit for media queries ****
 
 // 1em = 16px
+//  400 / 16 = 25em;
+//  600 / 16 = 37.5em;
 //  800 / 16 = 50em
 // 1100 / 16 = 68.75em
 // 1300 / 16 = 81.25em
@@ -23,6 +27,8 @@ ORDER to apply media queries:
 4. Component specific layout
 
 $breakpoint argument choices:
+- phone-tiny
+- phone-small
 - phone
 - tab-port
 - tab-land
@@ -31,6 +37,20 @@ $breakpoint argument choices:
 */
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == phone-tiny {
+    // 400px
+    @media only screen and (max-width: 25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone-small {
+    // 600px
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+
   @if $breakpoint == phone {
     // 800px
     @media only screen and (max-width: 50em) {
@@ -54,7 +74,7 @@ $breakpoint argument choices:
 
   @if $breakpoint == desktop {
     // 1600px
-    @media only screen and (max-width: 100em) {
+    @media only screen and (max-width: 112.4375em) {
       @content;
     }
   }

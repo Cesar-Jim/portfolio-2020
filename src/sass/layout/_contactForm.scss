@@ -8,22 +8,31 @@
     margin: 10rem auto;
     width: 45rem;
 
+    @include respond(big-desktop) {
+      height: 53.5rem;
+    }
+
+    @include respond(desktop) {
+      height: 55.7rem;
+    }
+
     @include respond(tab-land) {
       width: 30rem;
     }
 
     @include respond(phone) {
+      width: 38rem;
+    }
+
+    @include respond(phone-small) {
+      display: inline-block;
+      height: 52rem;
+      text-align: center;
       width: 28rem;
     }
-  }
 
-  &__box {
-    @include respond(desktop) {
-      margin: 0 0 3rem 0;
-    }
-
-    @include respond(phone) {
-      margin: 0 0 3rem 0;
+    @include respond(phone-tiny) {
+      width: 24rem;
     }
   }
 
@@ -45,7 +54,12 @@
 
     @include respond(phone) {
       font-size: $font-contact-form-title-ph;
-      margin: 2rem 0 3rem 0;
+      margin: -2rem 0 3rem 0;
+    }
+
+    @include respond(phone-small) {
+      font-size: $font-contact-form-title-ph;
+      margin: -2rem 0 0 0;
     }
   }
 
@@ -67,7 +81,7 @@
       margin: 2.3rem 0;
     }
 
-    @include respond(tab-land) {
+    @include respond(tab-port) {
       font-size: $font-contact-form-input-tp;
       margin: 2.7rem 0;
     }
