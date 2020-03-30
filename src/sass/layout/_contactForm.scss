@@ -7,33 +7,7 @@
     justify-content: center;
     margin: 10rem auto;
     width: 45rem;
-
-    @include respond(big-desktop) {
-      height: 53.5rem;
-    }
-
-    @include respond(desktop) {
-      height: 55.7rem;
-    }
-
-    @include respond(tab-land) {
-      width: 30rem;
-    }
-
-    @include respond(phone) {
-      width: 38rem;
-    }
-
-    @include respond(phone-small) {
-      display: inline-block;
-      height: 52rem;
-      text-align: center;
-      width: 28rem;
-    }
-
-    @include respond(phone-tiny) {
-      width: 24rem;
-    }
+    position: static;
   }
 
   &__title {
@@ -43,24 +17,6 @@
     font-size: $font-contact-form-title-bd;
     font-weight: 100;
     padding: 1.5rem 0 3rem 0;
-
-    @include respond(tab-land) {
-      padding: 0 0 3rem 0;
-    }
-
-    @include respond(tab-port) {
-      font-size: $font-contact-form-title-tp;
-    }
-
-    @include respond(phone) {
-      font-size: $font-contact-form-title-ph;
-      margin: -2rem 0 3rem 0;
-    }
-
-    @include respond(phone-small) {
-      font-size: $font-contact-form-title-ph;
-      margin: -2rem 0 0 0;
-    }
   }
 
   &__name,
@@ -77,15 +33,6 @@
     width: 100%;
     transition: all 0.2s ease-in-out;
 
-    @include respond(tab-land) {
-      margin: 2.3rem 0;
-    }
-
-    @include respond(tab-port) {
-      font-size: $font-contact-form-input-tp;
-      margin: 2.7rem 0;
-    }
-
     &:focus {
       outline: none;
       border: 1px solid rgba($color-call-to-action, 1);
@@ -99,18 +46,10 @@
     &-sent {
       opacity: 0;
       font-size: $font-contact-form-message-sent-bd;
-
-      @include respond(tab-port) {
-        font-size: $font-contact-form-message-sent-tp;
-      }
     }
     &-sent--active {
       color: $color-call-to-action;
       font-size: $font-contact-form-message-sent-bd;
-
-      @include respond(tab-port) {
-        font-size: $font-contact-form-message-sent-tp;
-      }
     }
   }
 }
@@ -120,10 +59,6 @@
   background-color: $color-call-to-action-dark;
   color: $color-secondary;
   margin: 1.5rem 0 0 0;
-
-  @include respond(tab-port) {
-    font-size: $font-contact-form-button-tp;
-  }
 
   &:hover {
     background-color: $color-call-to-action-light;

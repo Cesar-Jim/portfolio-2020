@@ -9,58 +9,16 @@
     font-size: $font-skills-title-bd;
     font-weight: 400;
     margin: 10rem 0 0 0;
-
-    @include respond(tab-port) {
-      font-size: $font-skills-title-tp;
-    }
-
-    @include respond(phone) {
-      font-size: $font-skills-title-ph;
-      margin: 65rem 0 3rem 0;
-    }
-
-    @include respond(phone-small) {
-      margin: 40rem 0 0 0;
-    }
-
-    @include respond(phone-tiny) {
-      margin: 75rem 0 0 0;
-    }
   }
 
   &__table {
     font-size: $font-skills-table-text-bd;
     line-height: 3rem;
-
-    @include respond(desktop) {
-      font-size: $font-skills-table-text-de;
-    }
-
-    @include respond(tab-land) {
-      line-height: 2.7rem;
-    }
-
-    @include respond(tab-port) {
-      font-size: $font-skills-table-text-tp;
-      line-height: 2.5rem;
-    }
-
-    @include respond(phone) {
-      font-size: $font-skills-table-text-ph;
-    }
-
-    @include respond(phone-tiny) {
-      font-size: $font-skills-table-text-pt;
-    }
   }
 
   [class*='__table-row'] {
     display: flex;
     flex-direction: row;
-
-    @include respond(phone) {
-      flex-direction: column;
-    }
   }
 
   [class*='__table-cell'] {
@@ -72,72 +30,23 @@
     width: 48rem;
     height: 48rem;
     margin: 0 14px;
-
-    @include respond(desktop) {
-      width: 36rem;
-    }
-
-    @include respond(tab-land) {
-      width: 29rem;
-    }
-
-    @include respond(tab-port) {
-      height: 42rem;
-      width: 22rem;
-    }
-
-    @include respond(phone) {
-      height: 36rem;
-      width: 27rem;
-    }
   }
 
   &__icon {
     height: 8rem;
     margin: 0 0 1.5rem 0;
     width: 8rem;
-
-    @include respond(desktop) {
-      height: 6rem;
-      width: 6rem;
-    }
-
-    @include respond(tab-port) {
-      height: 5rem;
-      width: 5rem;
-    }
   }
 
   &__category {
     font-size: $font-skills-category-bd;
     font-weight: 700;
     margin: 0 0 5rem 0;
-
-    @include respond(tab-port) {
-      font-size: $font-skills-category-tp;
-    }
-
-    @include respond(phone) {
-      font-size: $font-skills-category-ph;
-      margin: 0 0 1.5rem 0;
-    }
   }
 
   &__cell-content {
     padding: 0 12rem 0 12rem;
     text-align: center;
     word-spacing: 0.6rem;
-
-    @include respond(desktop) {
-      padding: 0 6rem 0 6rem;
-    }
-
-    @include respond(tab-land) {
-      padding: 0 4.5rem 0 4.5rem;
-    }
-
-    @include respond(tab-port) {
-      padding: 0 1.5rem 0 1.5rem;
-    }
   }
 }

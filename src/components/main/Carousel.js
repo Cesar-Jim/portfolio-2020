@@ -21,7 +21,6 @@ const numberOfDisplayedImages = () => {
     displayQuantityOfSide = 1;
   }
 
-  console.log(displayQuantityOfSide);
   return displayQuantityOfSide;
 };
 

@@ -2,23 +2,23 @@
 
 /*
 Breakpoints:
-   0px -  400px     Phone tiny
- 400px -  600px     Phone small
- 600px -  800px     Phone
- 800px - 1100px     Tablet (portrait)
-1100px - 1300px     Tablet (landscape)
-1300px - 1800px     Is where normal styles apply
-1800px - + px       Bigger screens
+   0px -  575.98px --> Smaller devices
+ 576px -  767.98px --> Small devices (landscape phones, less than 768px)
+ 768px -  991.98px --> Medium devices (tablets, less than 992px)
+ 992px - 1199.98px --> Large devices (laptops, less than 1200px)
+1200px - 1679.98px --> Larger devices (desktops, less than 1680)
+1680px -       +px --> Largest devices (big desktops 1680 and up)
 
 **** "em" is the BEST unit for media queries ****
 
-// 1em = 16px
-//  400 / 16 = 25em;
-//  600 / 16 = 37.5em;
-//  800 / 16 = 50em
-// 1100 / 16 = 68.75em
-// 1300 / 16 = 81.25em
-// 1800 / 16 = 112.5em
+// 1em = 16px:
+
+//  575.98 / 16 =  35.99875‬em
+//  767.98 / 16 =  47.99875em
+// 991.98  / 16 =  61.99875em
+// 1199.98 / 16 =  74.99875em
+// 1679.98 / 16 = 104.99875em
+// 1680    / 16 = 105em
 
 ORDER to apply media queries:
 1. Base & typography
@@ -27,61 +27,53 @@ ORDER to apply media queries:
 4. Component specific layout
 
 $breakpoint argument choices:
-- phone-tiny
 - phone-small
 - phone
-- tab-port
-- tab-land
+- tablet
+- laptop
 - desktop
-- big-desktop
+- desktop-big
 */
 
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone-tiny {
-    // 400px
-    @media only screen and (max-width: 25em) {
-      @content;
-    }
-  }
-
   @if $breakpoint == phone-small {
-    // 600px
-    @media only screen and (max-width: 37.5em) {
+    // 575.98px
+    @media only screen and (max-width: 35.99875em) {
       @content;
     }
   }
 
   @if $breakpoint == phone {
-    // 800px
-    @media only screen and (max-width: 50em) {
+    // 767.98px
+    @media only screen and (max-width: 47.99875em) {
       @content;
     }
   }
 
-  @if $breakpoint == tab-port {
-    // 1100px
-    @media only screen and (max-width: 68.75em) {
+  @if $breakpoint == tablet {
+    // 991.98px
+    @media only screen and (max-width: 61.99875em) {
       @content;
     }
   }
 
-  @if $breakpoint == tab-land {
-    // 1300px
-    @media only screen and (max-width: 81.25em) {
+  @if $breakpoint == laptop {
+    // 1199.98px
+    @media only screen and (max-width: 74.99875em) {
       @content;
     }
   }
 
   @if $breakpoint == desktop {
-    // 1600px
-    @media only screen and (max-width: 112.4375em) {
+    // 1679.98px
+    @media only screen and (max-width: 104.99875em) {
       @content;
     }
   }
 
-  @if $breakpoint == big-desktop {
-    // 1800px and +
-    @media only screen and (min-width: 112.5em) {
+  @if $breakpoint == desktop-big {
+    // 1680px and +
+    @media only screen and (min-width: 105em) {
       @content;
     }
   }
