@@ -7,7 +7,7 @@ const ContactForm = () => {
   const { value: message, bind: bindMessage, reset: resetMessage } = useInput(
     ''
   );
-  const [formSubmitted, setFormSubmitted] = useState(true);
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   const handleSubmit = event => {
     event.preventDefault();
