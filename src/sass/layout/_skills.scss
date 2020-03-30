@@ -20,7 +20,7 @@
     }
 
     @include respond(phone-small) {
-      //margin: 40rem 0 0 0;
+      margin: 40rem 0 0 0;
     }
 
     @include respond(phone-tiny) {
@@ -136,7 +136,7 @@
       padding: 0 4.5rem 0 4.5rem;
     }
 
-    @include respond(tab-land) {
+    @include respond(tab-port) {
       padding: 0 1.5rem 0 1.5rem;
     }
   }

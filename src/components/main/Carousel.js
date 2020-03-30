@@ -34,7 +34,7 @@ const Carousel = () => (
       displayQuantityOfSide={numberOfDisplayedImages()}
       navigation={false}
       enableScroll={true}
-      clickable={false}
+      clickable={true}
       active={0}
       enableHeading={true}
       media={{
