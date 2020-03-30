@@ -33,9 +33,8 @@ const Carousel = () => (
       className='coverflow'
       displayQuantityOfSide={numberOfDisplayedImages()}
       navigation={false}
-      infiniteScroll
       enableScroll={true}
-      clickable={true}
+      clickable={false}
       active={0}
       enableHeading={true}
       media={{
