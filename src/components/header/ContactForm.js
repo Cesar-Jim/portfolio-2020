@@ -62,15 +62,6 @@ const ContactForm = () => {
         onSubmit={handleSubmit}
       >
         <h2 className='contact-form__title'>How can I help? </h2>
-        {formSubmitted ? (
-          <p className='contact-form__message-sent--active'>
-            Success! Your message has been sent.
-          </p>
-        ) : (
-          <p className='contact-form__message-sent'>
-            Success! Your message has been sent.
-          </p>
-        )}
         <label className='contact-form__label' htmlFor='name'>
           Name <span className='contact-form__label--asterisk'>*</span>
         </label>
@@ -105,6 +96,15 @@ const ContactForm = () => {
           {...bindMessage}
           required
         ></textarea>
+        {formSubmitted ? (
+          <p className='contact-form__message-sent--active'>
+            Success! Your message has been sent.
+          </p>
+        ) : (
+          <p className='contact-form__message-sent'>
+            Success! Your message has been sent.
+          </p>
+        )}
         <input className='contact-form__button' type='submit' value='Submit' />
       </form>
     </div>
