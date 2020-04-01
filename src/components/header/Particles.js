@@ -37,7 +37,7 @@ const HeaderParticles = () => {
         enable: false
       },
       size: {
-        value: 1.1
+        value: randomNum(0, 2)
       },
       opacity: {
         random: true
