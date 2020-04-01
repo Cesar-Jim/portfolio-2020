@@ -12,17 +12,17 @@ const TextBox = () => {
         </p>
         <br />
         <p className='text-box__paragraph--text'>
-          It's been already 2 years now since I decided to move from the
-          Automotive industry to pursue a career in the Tech Industry. Im am
-          currently specializing in Front-End technologies such as React,
-          however I also enjoy working on the backend.
+          It's been already 2 years since I decided to move from the Automotive
+          industry to pursue a career in the Tech Industry. Im am currently
+          specializing in Front-End technologies such as React. However I also
+          enjoy working on the backend.
         </p>
         <br />
         <p className='text-box__paragraph--text'>
           I created this website to share some of my professional information
           along with some of the work I have made during the last couple of
-          years. So, thank you for stopping by and please, don't hesitate to get
-          in contact should you have a project in mind in which I could be of
+          years. So, thank you for stopping by and please, don't hesitate to
+          contact me should you have a project in mind in which I could be of
           help.
         </p>
         <br />
