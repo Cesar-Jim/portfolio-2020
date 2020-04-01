@@ -8,9 +8,7 @@ import Footer from './components/footer/Footer';
 
 import ReactGA from 'react-ga';
 
-const { REACT_APP_ANALYTICS_ID: analyticsId } = process.env;
-
-ReactGA.initialize(analyticsId);
+ReactGA.initialize('UA-36717008-1');
 
 const App = () => {
   return (
