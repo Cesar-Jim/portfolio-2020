@@ -8,6 +8,8 @@ const ContactForm = () => {
     ''
   );
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [sendingForm, setSendingForm] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -34,6 +36,8 @@ const ContactForm = () => {
     receiverEmail,
     user
   ) => {
+    setSendingForm(true);
+    setError(false);
     window.emailjs
       .send(
         'default_service',
@@ -46,12 +50,19 @@ const ContactForm = () => {
         user
       )
       .then(res => {
+        setSendingForm(false);
         setFormSubmitted(true);
         setTimeout(() => {
           setFormSubmitted(false);
         }, 3000);
       })
-      .catch(e => console.log('Failed to send message. Error: ', e));
+      .catch(e => {
+        setError(true);
+        setTimeout(() => {
+          setError(false);
+        }, 3000);
+        console.log('Failed to send message. Error: ', e);
+      });
   };
 
   return (
@@ -98,12 +109,24 @@ const ContactForm = () => {
         ></textarea>
         {formSubmitted ? (
           <p className='contact-form__message-sent--active'>
-            Success! Your message has been sent.
+            Success! Your message has been received ✓
           </p>
         ) : (
-          <p className='contact-form__message-sent'>
-            Success! Your message has been sent.
+          ''
+        )}
+        {sendingForm ? (
+          <p className='contact-form__message-sent--active'>
+            Sending message... ✉
           </p>
+        ) : (
+          ''
+        )}
+        {error ? (
+          <p className='contact-form__message-sent--active'>
+            Error! Your message can not be sent. ¯\_(ツ)_/¯
+          </p>
+        ) : (
+          ''
         )}
         <input className='contact-form__button' type='submit' value='Submit' />
       </form>
