@@ -57,6 +57,8 @@ const HeaderParticles = () => {
 
   window.addEventListener('resize', handleResize);
 
+  window.removeEventListener('resize', handleResize);
+
   return (
     <Particles
       className='particles__background'
