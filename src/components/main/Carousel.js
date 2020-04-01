@@ -62,35 +62,14 @@ const Carousel = () => (
         }
       }}
     >
-      <img
-        src='/images/apps/tribe-app.PNG'
-        alt='Tribe App'
-        data-action='https://cesar-jimenez-tribeapp.herokuapp.com/'
-      />
-      <img
-        src='/images/apps/zaplabs.PNG'
-        alt='Zaplabs'
-        data-action='https://new.myzap.com/'
-      />
-      <img
-        src='/images/apps/uva.PNG'
-        alt='Uva'
-        data-action='https://cesar-jimenez-uva.herokuapp.com/'
-      />
+      <img src='/images/apps/tribe-app.PNG' alt='Tribe App' />
+      <img src='/images/apps/zaplabs.PNG' alt='Zaplabs' />
+      <img src='/images/apps/uva.PNG' alt='Uva' />
       <img src='/images/apps/natours.PNG' alt='Natours' />
-
-      <img
-        src='/images/apps/cb-homes.PNG'
-        alt='Coldwell-Banker'
-        data-action='https://www.coldwellbankerhomes.com/'
-      />
+      <img src='/images/apps/cb-homes.PNG' alt='Coldwell-Banker' />
       <img src='/images/apps/jams.PNG' alt='Jams' />
       <img src='/images/apps/cap-store.PNG' alt='Cortes Al Punto' />
-      <img
-        src='/images/apps/blocipedia.PNG'
-        alt='Blocipedia'
-        data-action='https://cesar-jimenez-blocipedia-node.herokuapp.com/'
-      />
+      <img src='/images/apps/blocipedia.PNG' alt='Blocipedia' />
       <img src='/images/apps/shooter.PNG' alt='Galaxy Shooter' />
     </Coverflow>
   </div>
