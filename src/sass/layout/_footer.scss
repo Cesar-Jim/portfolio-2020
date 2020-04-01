@@ -1,0 +1,38 @@
+.footer {
+  &__container {
+    margin: 25rem 0 5rem 0;
+
+    @include respond(phone-small) {
+      margin: 20rem 0 5rem 0;
+    }
+  }
+
+  &__flag {
+    display: flex;
+    flex-direction: row;
+    font-size: $font-footer-flag-db;
+    justify-content: center;
+
+    @include respond(phone-small) {
+      font-size: $font-footer-flag-ps;
+    }
+
+    &--proudly {
+      border-bottom: 1px solid green;
+    }
+
+    &--mexico {
+      border-bottom: 1px solid red;
+    }
+  }
+
+  &__copyright {
+    font-size: $font-footer-copyright-db;
+    margin: 1.5rem 0 0 0;
+    text-align: center;
+
+    @include respond(phone-small) {
+      font-size: $font-footer-copyright-ps;
+    }
+  }
+}

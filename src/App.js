@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom';
 
 import Header from './components/header/Header';
 import Main from './components/main/Main';
+import Footer from './components/footer/Footer';
 
 import ReactGA from 'react-ga';
 
@@ -16,6 +17,7 @@ const App = () => {
     <div>
       <Header />
       <Main />
+      <Footer />
     </div>
   );
 };

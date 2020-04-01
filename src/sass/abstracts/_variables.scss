@@ -16,7 +16,7 @@ $font-family-secondary: 'Crimson Text', serif;
 $font-family-header: 'PT Sans', sans-serif;
 
 // ********************************************** DESKTOP-BIG (DEFAULT)
-// Header
+//Header
 $font-heading-main-title-db: 10rem;
 $font-heading-sub-title-db: 1.77rem;
 $font-text-box-title-db: 3.2rem;
@@ -26,10 +26,13 @@ $font-contact-form-label-db: 1.3rem;
 $font-contact-form-input-db: 1.4rem;
 $font-contact-form-message-sent-db: 1.7rem;
 $font-contact-form-button-db: 1.5rem;
-// Skills
+//Skills
 $font-skills-title-db: 4.8rem;
 $font-skills-category-db: 3rem;
 $font-skills-table-text-db: 1.5rem;
+//Footer
+$font-footer-flag-db: 1.2rem;
+$font-footer-copyright-db: 1.1rem;
 
 // ********************************************** DESKTOP
 // Header
@@ -108,6 +111,9 @@ $font-skills-category-ps: 1.9rem;
 $font-skills-table-text-ps: 1.3rem;
 //Projects
 $font-projects-title-ps: 3rem;
+//Footer
+$font-footer-flag-ps: 1rem;
+$font-footer-copyright-ps: 0.9rem;
 
 // ********************************************** COLORS
 $color-primary: #689eb8;
