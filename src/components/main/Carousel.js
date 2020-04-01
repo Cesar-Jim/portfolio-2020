@@ -31,26 +31,34 @@ const Carousel = () => (
     <Coverflow
       className='coverflow'
       displayQuantityOfSide={numberOfDisplayedImages()}
-      enableScroll={true}
+      enableScroll={false}
       clickable={true}
       active={0}
       enableHeading={true}
       media={{
-        '@media (min-width: 1800px)': {
-          width: '100%',
-          height: '500px'
-        },
-        '@media (max-width: 1799px)': {
+        '@media (min-width: 1680px)': {
           width: '100%',
           height: '460px'
         },
-        '@media (max-width: 799px)': {
+        '@media (max-width: 1200px)': {
           width: '100%',
           height: '500px'
         },
-        '@media (max-width: 399px)': {
+        '@media (max-width: 992px)': {
           width: '100%',
-          height: '360px'
+          height: '440px'
+        },
+        '@media (max-width: 768px)': {
+          width: '100%',
+          height: '560px'
+        },
+        '@media (max-width: 576px)': {
+          width: '100%',
+          height: '420px'
+        },
+        '@media (max-width: 320px)': {
+          width: '100%',
+          height: '300px'
         }
       }}
     >
@@ -58,31 +66,23 @@ const Carousel = () => (
         src='/images/apps/tribe-app.PNG'
         alt='Tribe App'
         data-action='https://cesar-jimenez-tribeapp.herokuapp.com/'
-        style={{ display: 'block', width: '100%' }}
       />
       <img
         src='/images/apps/zaplabs.PNG'
         alt='Zaplabs'
         data-action='https://new.myzap.com/'
-        style={{ display: 'block', width: '100%' }}
       />
       <img
         src='/images/apps/uva.PNG'
         alt='Uva'
         data-action='https://cesar-jimenez-uva.herokuapp.com/'
-        style={{ display: 'block', width: '100%' }}
       />
-      <img
-        src='/images/apps/natours.PNG'
-        alt='Natours'
-        style={{ display: 'block', width: '100%' }}
-      />
+      <img src='/images/apps/natours.PNG' alt='Natours' />
 
       <img
         src='/images/apps/cb-homes.PNG'
         alt='Coldwell-Banker'
         data-action='https://www.coldwellbankerhomes.com/'
-        style={{ display: 'block', width: '100%' }}
       />
       <img src='/images/apps/jams.PNG' alt='Jams' />
       <img src='/images/apps/cap-store.PNG' alt='Cortes Al Punto' />
@@ -90,7 +90,6 @@ const Carousel = () => (
         src='/images/apps/blocipedia.PNG'
         alt='Blocipedia'
         data-action='https://cesar-jimenez-blocipedia-node.herokuapp.com/'
-        style={{ display: 'block', width: '100%' }}
       />
     </Coverflow>
   </div>

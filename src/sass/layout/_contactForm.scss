@@ -1,41 +1,146 @@
 .contact-form {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-family-primary;
+
+  &__container {
+    text-align: left;
+    background-color: $color-font-dark;
+    width: 40%;
+
+    @include respond(laptop) {
+      width: 50%;
+
+      .contact-form__button {
+        display: flex;
+        margin: 0 auto;
+      }
+    }
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
   &__form {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 60rem;
-    justify-content: center;
     margin: 10rem auto;
     width: 45rem;
-    position: static;
+
+    @include respond(desktop) {
+      margin: 8rem auto;
+      width: 36rem;
+    }
+
+    @include respond(laptop) {
+      margin: 6rem auto;
+      width: 34rem;
+    }
+
+    @include respond(tablet) {
+      width: 28rem;
+    }
+
+    @include respond(phone) {
+      width: 34rem;
+    }
+
+    @include respond(phone-small) {
+      width: 23rem;
+    }
   }
 
   &__title {
-    align-self: center;
+    color: $color-gray-light;
+    font-family: $font-family-header;
+    font-size: $font-contact-form-title-db;
+    font-weight: 400;
+    margin: 0 0 6rem 0;
+    text-align: center;
+
+    @include respond(desktop) {
+      font-size: $font-contact-form-title-de;
+    }
+
+    @include respond(laptop) {
+      margin: 0 0 5rem 0;
+    }
+
+    @include respond(laptop) {
+      font-size: $font-contact-form-title-ta;
+    }
+
+    @include respond(phone) {
+      font-size: $font-contact-form-title-ph;
+    }
+
+    @include respond(phone-small) {
+      font-size: $font-contact-form-title-ps;
+    }
+  }
+
+  &__label {
     color: $color-gray-light;
     font-family: $font-family-primary;
-    font-size: $font-contact-form-title-bd;
-    font-weight: 100;
-    padding: 1.5rem 0 3rem 0;
+    font-size: $font-contact-form-label-db;
+
+    @include respond(desktop) {
+      font-size: $font-contact-form-label-de;
+    }
+
+    @include respond(tablet) {
+      font-size: $font-contact-form-label-ta;
+    }
+
+    @include respond(phone) {
+      font-size: $font-contact-form-label-ph;
+    }
+
+    @include respond(phone-small) {
+      font-size: $font-contact-form-label-ps;
+    }
+
+    &--asterisk {
+      color: $color-call-to-action;
+    }
   }
 
   &__name,
   &__email,
   &__message {
     color: $color-font-dark;
-    font-family: inherit;
-    font-size: $font-contact-form-input-bd;
+    font-family: $font-family-primary;
+    font-size: $font-contact-form-input-db;
     font-weight: 400;
-    padding: 0.7rem 1.5rem;
+    padding: 0.5rem;
     border: 1px solid rgba($color-gray-light, 0.7);
-    border-radius: 20px;
-    margin: 2.9rem 0;
+    border-radius: 2px;
+    margin: 1rem 0 4rem 0;
     width: 100%;
     transition: all 0.2s ease-in-out;
 
     &:focus {
       outline: none;
       border: 1px solid rgba($color-call-to-action, 1);
+    }
+
+    @include respond(desktop) {
+      font-size: $font-contact-form-input-de;
+    }
+
+    @include respond(laptop) {
+      font-size: $font-contact-form-input-la;
+    }
+
+    @include respond(tablet) {
+      font-size: $font-contact-form-input-ta;
+    }
+
+    @include respond(phone) {
+      font-size: $font-contact-form-input-ph;
+    }
+
+    @include respond(phone-small) {
+      font-size: $font-contact-form-input-ps;
     }
   }
 
@@ -45,23 +150,81 @@
 
     &-sent {
       opacity: 0;
-      font-size: $font-contact-form-message-sent-bd;
+      font-size: $font-contact-form-message-sent-db;
+
+      @include respond(desktop) {
+        font-size: $font-contact-form-message-sent-de;
+      }
+
+      @include respond(tablet) {
+        font-size: $font-contact-form-message-sent-ta;
+      }
+
+      @include respond(phone) {
+        font-size: $font-contact-form-message-sent-ph;
+      }
+
+      @include respond(phone-small) {
+        font-size: $font-contact-form-message-sent-ps;
+      }
     }
     &-sent--active {
       color: $color-call-to-action;
-      font-size: $font-contact-form-message-sent-bd;
+      font-size: $font-contact-form-message-sent-db;
+      margin: 1rem 0 2rem 0;
+      text-align: center;
+
+      @include respond(desktop) {
+        font-size: $font-contact-form-message-sent-de;
+      }
+
+      @include respond(tablet) {
+        font-size: $font-contact-form-message-sent-ta;
+      }
+
+      @include respond(phone) {
+        font-size: $font-contact-form-message-sent-ph;
+      }
+
+      @include respond(phone-small) {
+        font-size: $font-contact-form-message-sent-ps;
+      }
     }
   }
-}
 
-.btn--submit {
-  align-self: flex-end;
-  background-color: $color-call-to-action-dark;
-  color: $color-secondary;
-  margin: 1.5rem 0 0 0;
+  &__button {
+    background-color: $color-call-to-action-dark;
+    border: 1px solid $color-call-to-action;
+    border-radius: 2px;
+    color: $color-secondary;
+    cursor: pointer;
+    font-size: $font-contact-form-button-db;
+    display: inline-block;
+    margin: 2rem 0 0 0;
+    padding: 0.7rem 2rem;
+    transition: all 0.2s ease-in-out 0.1s;
 
-  &:hover {
-    background-color: $color-call-to-action-light;
-    color: $color-call-to-action;
+    @include respond(desktop) {
+      font-size: $font-contact-form-button-de;
+      margin: 0 0 0 0;
+    }
+
+    @include respond(desktop) {
+      font-size: $font-contact-form-button-ta;
+    }
+
+    @include respond(phone) {
+      font-size: $font-contact-form-button-ph;
+    }
+
+    @include respond(phone-small) {
+      font-size: $font-contact-form-button-ps;
+    }
+
+    &:hover {
+      background-color: $color-secondary;
+      border: 1px solid $color-secondary;
+      color: $color-font-dark;
+    }
   }
 }

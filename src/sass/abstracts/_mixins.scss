@@ -2,7 +2,8 @@
 
 /*
 Breakpoints:
-   0px -  575.98px --> Smaller devices
+   0px -  319.98px --> Smallest devices
+ 320px -  575.98px --> Smaller devices
  576px -  767.98px --> Small devices (landscape phones, less than 768px)
  768px -  991.98px --> Medium devices (tablets, less than 992px)
  992px - 1199.98px --> Large devices (laptops, less than 1200px)
@@ -12,19 +13,12 @@ Breakpoints:
 **** "em" is the BEST unit for media queries ****
 
 // 1em = 16px:
-
 //  575.98 / 16 =  35.99875‬em
 //  767.98 / 16 =  47.99875em
 // 991.98  / 16 =  61.99875em
 // 1199.98 / 16 =  74.99875em
 // 1679.98 / 16 = 104.99875em
-// 1680    / 16 = 105em
-
-ORDER to apply media queries:
-1. Base & typography
-2. Layout & grid
-3. Page specific layout
-4. Component specific layout
+// 1680    / 16 = 105em  --> Default styling
 
 $breakpoint argument choices:
 - phone-small
@@ -70,6 +64,8 @@ $breakpoint argument choices:
       @content;
     }
   }
+
+  // Default styling: Desktop first
 
   @if $breakpoint == desktop-big {
     // 1680px and +

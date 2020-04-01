@@ -42,7 +42,7 @@ const Skills = () => (
                 alt='Versioning'
                 category='Versioning'
                 content='I use Git and GitHub on almost a daily basis and feel very
-                comfortable using them. I know BitBucket to some extent since some of the clients I have worked with, use it.'
+                comfortable using them. I know BitBucket to some extent since some of the clients I have worked with, have adopted it.'
               />
             </td>
             <td className='skills__table-cell2-row2'>

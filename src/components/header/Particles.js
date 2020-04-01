@@ -49,7 +49,7 @@ const particleOpt = {
 
 const HeaderParticles = () => {
   const [width, setWidth] = useState(window.innerWidth);
-  const height = 372;
+  const height = 410;
 
   const handleResize = () => {
     setWidth(window.innerWidth);

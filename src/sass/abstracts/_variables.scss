@@ -1,90 +1,115 @@
 // ********************************************** MEDIA QUERIES
 /*
-phone-small       = ps (    0px -  320px )
-phone             = ph (  321px -  375px )
-tablet            = tp (  376px - 1024px )
-tablet landscape  = tl ( 1025px - 1440px )  
-desktop           = de ( 1441px - 1680px )
-desktop-big       = bd ( 1681px - +      )
+phone-tiny        = pt (    0px -  319.98px )
+phone-small       = ps (  320px -  575.98px )
+phone             = ph (  576px -  767.98px )
+tablet            = ta (  768px - 991.98px  )
+laptop            = la (  992px - 1199.98px )  
+desktop           = de ( 1200px - 1679.98px )
+desktop-big       = db ( 1680px - +         )
 */
 
 // ********************************************** FONTS
 // FONT FAMILIES
 $font-family-primary: 'Open Sans', sans-serif;
 $font-family-secondary: 'Crimson Text', serif;
+$font-family-header: 'PT Sans', sans-serif;
 
-// BUTTONS
-$font-button-bd: 1.4rem;
+// ********************************************** DESKTOP-BIG (DEFAULT)
+// Header
+$font-heading-main-title-db: 10rem;
+$font-heading-sub-title-db: 1.77rem;
+$font-text-box-title-db: 3.2rem;
+$font-text-box-text-db: 1.8rem;
+$font-contact-form-title-db: 2.4rem;
+$font-contact-form-label-db: 1.3rem;
+$font-contact-form-input-db: 1.4rem;
+$font-contact-form-message-sent-db: 1.7rem;
+$font-contact-form-button-db: 1.5rem;
+// Skills
+$font-skills-title-db: 4.8rem;
+$font-skills-category-db: 3rem;
+$font-skills-table-text-db: 1.5rem;
 
-// HEADER - BD
-$font-heading-main-title-bd: 10rem;
-$font-heading-sub-title-bd: 1.77rem;
-$font-text-box-title-bd: 2.7rem;
-$font-text-box-text-bd: 1.7rem;
-$font-contact-form-title-bd: 2.7rem;
-$font-contact-form-input-bd: 1.6rem;
-$font-contact-form-message-sent-bd: 1.6rem;
-$font-contact-form-button-bd: 1.4rem;
+// ********************************************** DESKTOP
+// Header
+$font-heading-main-title-de: 8rem;
+$font-heading-sub-title-de: 1.42rem;
+$font-text-box-title-de: 2.8rem;
+$font-text-box-text-de: 1.55rem;
+$font-contact-form-title-de: 2rem;
+$font-contact-form-label-de: 1.3rem;
+$font-contact-form-input-de: 1.3rem;
+$font-contact-form-message-sent-de: 1.4rem;
+$font-contact-form-button-de: 1.4rem;
+//Skills
+$font-skills-title-de: 4.4rem;
+$font-skills-category-de: 3rem;
+$font-skills-table-text-de: 1.35rem;
 
-// HEADER - TL
-$font-text-box-title-tl: 2.5rem;
-$font-text-box-text-tl: 1.5rem;
+// ********************************************** LAPTOP
+//Header
+$font-text-box-text-la: 1.4rem;
+$font-contact-form-input-la: 1.2rem;
+//Skills
+$font-skills-title-la: 4rem;
+$font-skills-category-la: 2.2rem;
+//Projects
+$font-projects-title-la: 4rem;
 
-// HEADER - TP
-$font-heading-main-title-tp: 6rem;
-$font-heading-sub-title-tp: 1.05rem;
-$font-text-box-title-tp: 2.1rem;
-$font-text-box-text-tp: 1.2rem;
-$font-contact-form-title-tp: 2.1rem;
-$font-contact-form-input-tp: 1.3rem;
-$font-contact-form-message-sent-tp: 1.4rem;
-$font-contact-form-button-tp: 1.2rem;
+// ********************************************** TABLET
+// Header
+$font-heading-main-title-ta: 6rem;
+$font-heading-sub-title-ta: 1.06rem;
+$font-text-box-title-ta: 2.2rem;
+$font-text-box-text-ta: 1.2rem;
+$font-contact-form-title-ta: 1.8rem;
+$font-contact-form-label-ta: 1.2rem;
+$font-contact-form-input-ta: 1.2rem;
+$font-contact-form-message-sent-ta: 1.3rem;
+$font-contact-form-button-ta: 1.3rem;
+//Skills
+$font-skills-title-ta: 3.4rem;
+$font-skills-category-ta: 1.8rem;
+$font-skills-table-text-ta: 1.15rem;
+//Projects
+$font-projects-title-ta: 3.4rem;
 
-// HEADER - PH
-$font-heading-main-title-ph: 5.9rem;
-$font-heading-sub-title-ph: 1.04rem;
-$font-text-box-title-ph: 1.8rem;
-$font-contact-form-title-ph: 1.8rem;
-
-// HEADER - PT
-$font-heading-main-title-pt: 4.9rem;
-$font-heading-sub-title-pt: 0.85rem;
-$font-text-box-title-pt: 1.8rem;
-$font-text-box-text-tp: 1.1rem;
-
-// SKILLS - BD
-$font-skills-title-bd: 5rem;
-$font-skills-category-bd: 2.6rem;
-$font-skills-table-text-bd: 1.7rem;
-
-// SKILLS - DE
-$font-skills-category-de: 2.6rem;
-$font-skills-table-text-de: 1.5rem;
-
-// SKILLS - TL
-// nothing changes from SKILL - DE
-
-// SKILLS - TP
-$font-skills-title-tp: 3rem;
-$font-skills-category-tp: 2rem;
-$font-skills-table-text-tp: 1.4rem;
-
-// SKILLS - PH
+// ********************************************** PHONE
+//Header
+$font-text-box-title-ph: 2.6rem;
+$font-text-box-text-ph: 1.4rem;
+$font-contact-form-title-ph: 2rem;
+$font-contact-form-label-ph: 1.3rem;
+$font-contact-form-input-ph: 1.3rem;
+$font-contact-form-message-sent-ph: 1.4rem;
+$font-contact-form-button-ph: 1.4rem;
+//Skills
 $font-skills-title-ph: 4rem;
 $font-skills-category-ph: 2.2rem;
-$font-skills-table-text-ph: 1.5rem;
-
-// SKILLS - PT
-$font-skills-table-text-pt: 1.5rem;
-
-// PROJECTS - TP
-$font-projects-title-tp: 3rem;
-
-// PROJECTS - PH
+$font-skills-table-text-ph: 1.6rem;
+//Projects
 $font-projects-title-ph: 4rem;
 
-// ********************************************** COLORS
+// ********************************************** PHONE-SMALL
+//Header
+$font-heading-main-title-ps: 4.5rem;
+$font-heading-sub-title-ps: 0.8rem;
+$font-text-box-title-ps: 2rem;
+$font-text-box-text-ps: 1.2rem;
+$font-contact-form-title-ps: 2rem;
+$font-contact-form-label-ps: 1.2rem;
+$font-contact-form-input-ps: 1.2rem;
+$font-contact-form-message-sent-ps: 1.2rem;
+$font-contact-form-button-ps: 1.2rem;
+//Skills
+$font-skills-title-ps: 3rem;
+$font-skills-category-ps: 1.9rem;
+$font-skills-table-text-ps: 1.3rem;
+//Projects
+$font-projects-title-ps: 3rem;
 
+// ********************************************** COLORS
 $color-primary: #689eb8;
 $color-primary-light: lighten($color-primary, 10%);
 $color-primary-dark: darken($color-primary, 10%);
@@ -98,7 +123,7 @@ $color-tertiary-light: lighten($color-tertiary, 10%);
 $color-tertiary-dark: darken($color-tertiary, 10%);
 
 $color-call-to-action: #eb6d4c;
-$color-call-to-action-light: lighten($color-call-to-action, 30%);
+$color-call-to-action-light: lighten($color-call-to-action, 10%);
 $color-call-to-action-dark: darken($color-call-to-action, 10%);
 
 $color-gray-light: #e5e5e5;
