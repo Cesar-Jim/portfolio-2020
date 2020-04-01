@@ -34,7 +34,7 @@ const Carousel = () => (
       enableScroll={false}
       clickable={true}
       active={0}
-      enableHeading={true}
+      enableHeading={false}
       media={{
         '@media (min-width: 1680px)': {
           width: '100%',
@@ -91,6 +91,7 @@ const Carousel = () => (
         alt='Blocipedia'
         data-action='https://cesar-jimenez-blocipedia-node.herokuapp.com/'
       />
+      <img src='/images/apps/shooter.PNG' alt='Galaxy Shooter' />
     </Coverflow>
   </div>
 );
