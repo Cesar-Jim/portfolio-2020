@@ -109,21 +109,19 @@ const ContactForm = () => {
         ></textarea>
         {formSubmitted ? (
           <p className='contact-form__message-sent--active'>
-            Success! Your message has been received ✓
+            Success! Message received ✓
           </p>
         ) : (
           ''
         )}
         {sendingForm ? (
-          <p className='contact-form__message-sent--active'>
-            Sending message... ✉
-          </p>
+          <p className='contact-form__message-sent--active'>Sending...</p>
         ) : (
           ''
         )}
         {error ? (
           <p className='contact-form__message-sent--active'>
-            Error! Your message can not be sent. ¯\_(ツ)_/¯
+            There was an error ¯\_(ツ)_/¯
           </p>
         ) : (
           ''
