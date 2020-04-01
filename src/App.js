@@ -6,10 +6,6 @@ import Header from './components/header/Header';
 import Main from './components/main/Main';
 import Footer from './components/footer/Footer';
 
-import ReactGA from 'react-ga';
-
-ReactGA.initialize('UA-36717008-1');
-
 const App = () => {
   return (
     <div>

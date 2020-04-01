@@ -24,6 +24,18 @@
         emailjs.init('%REACT_APP_EMAILJS_USERID%');
       })();
     </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="%REACT_APP_ANALYTICS_SRC%"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', '%REACT_APP_ANALYTICS_ID%');
+    </script>
   </head>
   <body>
     <div id="root"></div>
