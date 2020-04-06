@@ -7,7 +7,7 @@ const Heading = () => {
       <Particles />
       <img
         className='heading__image'
-        src='/images/cesar.png'
+        src='/images/cesar.webp'
         alt='Cesar Jimenez'
       />
       <h1 className='heading__title'>

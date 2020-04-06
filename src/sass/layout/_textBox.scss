@@ -36,7 +36,8 @@
       font-family: $font-family-header;
       font-size: $font-text-box-title-db;
       font-weight: 400;
-      padding: 0 0 4rem 14.7rem;
+      padding: 0 0 2rem 0;
+      text-align: center;
 
       @include respond(desktop) {
         font-size: $font-text-box-title-de;
@@ -65,10 +66,7 @@
     }
 
     &--text {
-      -webkit-hyphens: manual;
-      -ms-hyphens: manual;
-      hyphens: manual;
-      line-height: 3rem;
+      line-height: 4rem;
       margin: 0 auto;
       text-align: justify;
       width: 78%;
@@ -154,6 +152,10 @@
 
       &--linkedin {
         background-color: #0068b9;
+      }
+
+      &--github {
+        background-color: #fff;
       }
     }
   }

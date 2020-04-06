@@ -30,6 +30,8 @@ $font-contact-form-button-db: 1.5rem;
 $font-skills-title-db: 4.8rem;
 $font-skills-category-db: 3rem;
 $font-skills-table-text-db: 1.5rem;
+//Projects
+$font-projects-title-db: 4.8rem;
 //Footer
 $font-footer-flag-db: 1.2rem;
 $font-footer-copyright-db: 1.1rem;
@@ -116,7 +118,7 @@ $font-footer-flag-ps: 1rem;
 $font-footer-copyright-ps: 0.9rem;
 
 // ********************************************** COLORS
-$color-primary: #689eb8;
+$color-primary: #75977f;
 $color-primary-light: lighten($color-primary, 10%);
 $color-primary-dark: darken($color-primary, 10%);
 
@@ -142,3 +144,7 @@ $color-font-dark: #2a2e39;
 $color-background-light: #e5e5e5;
 $color-background-medium: #8a8a8a;
 $color-background-dark: #2a2e39;
+
+$color-white-carousel: #ffffff;
+$color-gray-light-carousel: #a1a3a881;
+$color-gray-dark-carousel: #2a2e3971;

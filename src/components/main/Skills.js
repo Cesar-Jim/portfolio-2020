@@ -10,7 +10,7 @@ const Skills = () => (
           <tr className='skills__table-row1'>
             <td className='skills__table-cell1-row1'>
               <Skill
-                icon='/images/core.png'
+                icon='/images/core.webp'
                 alt='Core'
                 category='Core'
                 content='JavaScript, HTML and CSS are the core technologies I work with
@@ -19,7 +19,7 @@ const Skills = () => (
             </td>
             <td className='skills__table-cell2-row1'>
               <Skill
-                icon='/images/front-end.png'
+                icon='/images/front-end.webp'
                 alt='Front-End'
                 category='Front-End'
                 content='I am familiar with ReactJS, Bootstrap, Sass, SemanticIU and know the basics of the AngularJS framework. For testing I have used Jasmine and Jest with Enzyme.'
@@ -27,7 +27,7 @@ const Skills = () => (
             </td>
             <td className='skills__table-cell3-row1'>
               <Skill
-                icon='/images/back-end.png'
+                icon='/images/back-end.webp'
                 alt='Back-End'
                 category='Back-End'
                 content='I have done database implementations using Firebase, MongoDB,
@@ -38,7 +38,7 @@ const Skills = () => (
           <tr className='skills__table-row2'>
             <td className='skills__table-cell1-row2'>
               <Skill
-                icon='/images/versioning.png'
+                icon='/images/versioning.webp'
                 alt='Versioning'
                 category='Versioning'
                 content='I use Git and GitHub on almost a daily basis and feel very
@@ -47,7 +47,7 @@ const Skills = () => (
             </td>
             <td className='skills__table-cell2-row2'>
               <Skill
-                icon='/images/design.png'
+                icon='/images/design.webp'
                 alt='Design'
                 category='Design'
                 content='When it comes to design, my preferred tools are: Balsamiq for
@@ -56,7 +56,7 @@ const Skills = () => (
             </td>
             <td className='skills__table-cell3-row2'>
               <Skill
-                icon='/images/teamwork.png'
+                icon='/images/teamwork.webp'
                 alt='Teamwork'
                 category='Teamwork'
                 content='I am a great team player and remote worker. My goal is always to be considered a valuable team member. I normally use Slack, Hangouts and Zoom for conferencing.'

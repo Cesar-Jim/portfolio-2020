@@ -35,42 +35,48 @@ const Carousel = () => (
       clickable={true}
       active={0}
       enableHeading={false}
+      currentFigureScale={1.8}
+      otherFigureScale={0.8}
       media={{
         '@media (min-width: 1680px)': {
           width: '100%',
-          height: '460px'
+          height: '600px',
         },
         '@media (max-width: 1200px)': {
           width: '100%',
-          height: '500px'
+          height: '500px',
         },
         '@media (max-width: 992px)': {
           width: '100%',
-          height: '440px'
+          height: '440px',
         },
         '@media (max-width: 768px)': {
           width: '100%',
-          height: '560px'
+          height: '560px',
         },
         '@media (max-width: 576px)': {
           width: '100%',
-          height: '420px'
+          height: '420px',
         },
         '@media (max-width: 320px)': {
           width: '100%',
-          height: '260px'
-        }
+          height: '260px',
+        },
       }}
     >
-      <img src='/images/apps/tribe-app.PNG' alt='Tribe App' />
-      <img src='/images/apps/zaplabs.PNG' alt='Zaplabs' />
-      <img src='/images/apps/uva.PNG' alt='Uva' />
-      <img src='/images/apps/natours.PNG' alt='Natours' />
-      <img src='/images/apps/cb-homes.PNG' alt='Coldwell-Banker' />
-      <img src='/images/apps/jams.PNG' alt='Jams' />
-      <img src='/images/apps/cap-store.PNG' alt='Cortes Al Punto' />
-      <img src='/images/apps/blocipedia.PNG' alt='Blocipedia' />
-      <img src='/images/apps/shooter.PNG' alt='Galaxy Shooter' />
+      <img src='/images/apps/tribe-app.webp' alt='Tribe App' />
+      <img src='/images/apps/zaplabs.webp' alt='Zaplabs' />
+      <img src='/images/apps/uva.webp' alt='Uva' />
+      <img src='/images/apps/natours.webp' alt='Natours' />
+      <img
+        src='/images/apps/cb-homes.webp'
+        alt='Coldwell-Banker'
+        style={{ backfaceVisibility: 'initial !important' }}
+      />
+      <img src='/images/apps/jams.webp' alt='Jams' />
+      <img src='/images/apps/cap-store.webp' alt='Cortes Al Punto' />
+      <img src='/images/apps/blocipedia.webp' alt='Blocipedia' />
+      <img src='/images/apps/galaxy-shooter.webp' alt='Shooter' />
     </Coverflow>
   </div>
 );

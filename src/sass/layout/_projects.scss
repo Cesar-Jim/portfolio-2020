@@ -4,9 +4,9 @@
   &__title {
     color: $color-font-dark;
     font-family: $font-family-primary;
-    font-size: 5rem;
+    font-size: $font-projects-title-db;
     font-weight: 400;
-    margin: 12rem 0 9rem 0;
+    margin: 12rem 0 12rem 0;
     text-align: center;
 
     @include respond(laptop) {

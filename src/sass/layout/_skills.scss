@@ -37,7 +37,7 @@
 
   &__table {
     font-size: $font-skills-table-text-db;
-    line-height: 3rem;
+    line-height: 4rem;
 
     @include respond(desktop) {
       font-size: $font-skills-table-text-de;

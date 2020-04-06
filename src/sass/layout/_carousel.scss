@@ -3,3 +3,19 @@
   color: rgba(42, 46, 57, 1);
   border-top: 2px solid white;
 }
+
+[class*='coverflow__figure'] {
+  backface-visibility: visible !important;
+}
+
+[class*='coverflow__coverflow'] {
+  backface-visibility: visible !important;
+  background-image: linear-gradient(
+    to bottom,
+    $color-white-carousel,
+    $color-white-carousel,
+    $color-white-carousel,
+    $color-gray-light-carousel,
+    $color-gray-dark-carousel
+  );
+}
