@@ -5,19 +5,31 @@ const numberOfDisplayedImages = () => {
   const windowWidth = window.innerWidth;
   let displayQuantityOfSide = 0;
 
-  if (windowWidth > 1600) {
+  if (windowWidth >= 1680) {
     displayQuantityOfSide = 4;
   }
 
-  if (windowWidth > 1300 && windowWidth <= 1600) {
+  if (windowWidth >= 1200 && windowWidth < 1680) {
     displayQuantityOfSide = 3;
   }
 
-  if (windowWidth > 800 && windowWidth <= 1300) {
+  if (windowWidth >= 992 && windowWidth < 1200) {
     displayQuantityOfSide = 2;
   }
 
-  if (windowWidth <= 800) {
+  if (windowWidth >= 768 && windowWidth < 992) {
+    displayQuantityOfSide = 2;
+  }
+
+  if (windowWidth >= 576 && windowWidth < 768) {
+    displayQuantityOfSide =1;
+  }
+
+  if (windowWidth >= 320 && windowWidth < 576) {
+    displayQuantityOfSide = 1;
+  }
+
+  if (windowWidth < 320) {
     displayQuantityOfSide = 1;
   }
 
@@ -36,29 +48,29 @@ const Carousel = () => (
       active={0}
       enableHeading={false}
       currentFigureScale={1.8}
-      otherFigureScale={0.8}
+      otherFigureScale={0.7}
       media={{
         '@media (min-width: 1680px)': {
           width: '100%',
           height: '600px',
         },
-        '@media (max-width: 1200px)': {
+        '@media (max-width: 1679.98px)': {
           width: '100%',
           height: '500px',
         },
-        '@media (max-width: 992px)': {
+        '@media (max-width: 1199.98px)': {
           width: '100%',
-          height: '440px',
+          height: '480px',
         },
-        '@media (max-width: 768px)': {
+        '@media (max-width: 767.98px)': {
           width: '100%',
-          height: '560px',
+          height: '460px',
         },
-        '@media (max-width: 576px)': {
+        '@media (max-width: 575.98px)': {
           width: '100%',
-          height: '420px',
+          height: '340px',
         },
-        '@media (max-width: 320px)': {
+        '@media (max-width: 319.98px)': {
           width: '100%',
           height: '260px',
         },
