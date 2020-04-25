@@ -6,7 +6,7 @@
     font-family: $font-family-primary;
     font-size: $font-projects-title-db;
     font-weight: 400;
-    margin: 12rem 0 12rem 0;
+    margin: -2rem 0 0rem 0;
     text-align: center;
 
     @include respond(laptop) {
@@ -14,17 +14,17 @@
     }
 
     @include respond(laptop) {
-      margin: 10rem 0 7rem 0;
-      font-size: $font-projects-title-ta;
+      margin: 10rem 0 2rem 0;
+      font-size: $font-projects-title-la;
     }
 
     @include respond(phone) {
-      margin: 16rem 0 8rem 0;
+      margin: 16rem 0 0 0;
       font-size: $font-projects-title-ph;
     }
 
     @include respond(phone-small) {
-      margin: 16rem 0 8rem 0;
+      margin: -8rem 0 1rem 0;
       font-size: $font-projects-title-ps;
     }
   }

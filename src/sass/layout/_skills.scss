@@ -8,7 +8,7 @@
     font-family: $font-family-header;
     font-size: $font-skills-title-db;
     font-weight: 100;
-    margin: 22rem 0 9rem 0;
+    margin: 22rem 0 10rem 0;
 
     @include respond(desktop) {
       font-size: $font-skills-title-de;
@@ -49,7 +49,7 @@
     }
 
     @include respond(tablet) {
-      line-height: 2rem;
+      line-height: 2.5rem;
     }
 
     @include respond(phone) {
@@ -166,10 +166,15 @@
   }
 
   &__category {
-    font-family: $font-family-header;
+    font-family: $font-family-primary;
     font-size: $font-skills-category-db;
     font-weight: 700;
     margin: 0 0 2rem 0;
+
+    @include respond(desktop) {
+      font-size: $font-skills-category-de;
+      margin: 0 0 2rem 0;
+    }
 
     @include respond(laptop) {
       font-size: $font-skills-category-la;

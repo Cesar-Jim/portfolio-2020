@@ -193,10 +193,10 @@
   }
 
   &__button {
-    background-color: $color-call-to-action-dark;
-    border: 1px solid $color-call-to-action;
+    background-color: $color-secondary;
+    border: 1px solid $color-secondary;
     border-radius: 2px;
-    color: $color-secondary;
+    color: $color-font-dark;
     cursor: pointer;
     font-size: $font-contact-form-button-db;
     display: inline-block;
@@ -222,9 +222,9 @@
     }
 
     &:hover {
-      background-color: $color-secondary;
-      border: 1px solid $color-secondary;
-      color: $color-font-dark;
+      background-color: $color-call-to-action-dark;
+      border: 1px solid  $color-call-to-action;
+      color: $color-secondary;
     }
   }
 }

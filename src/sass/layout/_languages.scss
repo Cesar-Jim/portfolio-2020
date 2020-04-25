@@ -1,0 +1,39 @@
+.languages {
+
+    &__container {
+        margin: 7rem 0 22rem 0;
+
+    }
+
+    &__title{
+        color: $color-font-dark;
+        font-family: $font-family-header;
+        font-size: $font-skills-title-db;
+        font-weight: 100;
+        margin: 8rem 0 8rem 0;
+        text-align: center;
+        
+        @include respond(desktop){
+            font-size: $font-languages-title-de;
+        }
+        
+        @include respond(laptop){
+            font-size: $font-languages-title-la;
+        }
+        
+        @include respond(tablet){
+            font-size: $font-languages-title-ta;
+            margin: 8rem 0 5rem 0;
+        }
+        
+        @include respond(phone){
+            font-size: $font-languages-title-ph;
+            margin: 8rem 0 5rem 0;  
+        }
+
+        @include respond(phone-small){
+            font-size: $font-languages-title-ps;
+            margin: 8rem 0 3rem 0;  
+        }
+    }
+}

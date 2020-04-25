@@ -1,6 +1,5 @@
 // ********************************************** MEDIA QUERIES
 /*
-phone-tiny        = pt (    0px -  319.98px )
 phone-small       = ps (  320px -  575.98px )
 phone             = ph (  576px -  767.98px )
 tablet            = ta (  768px - 991.98px  )
@@ -30,6 +29,10 @@ $font-contact-form-button-db: 1.5rem;
 $font-skills-title-db: 4.8rem;
 $font-skills-category-db: 3rem;
 $font-skills-table-text-db: 1.5rem;
+//Languages
+$font-languages-title-db: 4.8rem;
+$font-languages-name-db: 3rem;
+$font-languages-proficiency-db: 1.6rem;
 //Projects
 $font-projects-title-db: 4.8rem;
 //Footer
@@ -49,8 +52,12 @@ $font-contact-form-message-sent-de: 1.4rem;
 $font-contact-form-button-de: 1.4rem;
 //Skills
 $font-skills-title-de: 4.4rem;
-$font-skills-category-de: 3rem;
+$font-skills-category-de: 2.4rem;
 $font-skills-table-text-de: 1.35rem;
+//Languages
+$font-languages-title-de: 4.4rem;
+$font-languages-name-de: 2.2rem;
+$font-languages-proficiency-de: 1.3rem;
 
 // ********************************************** LAPTOP
 //Header
@@ -59,6 +66,10 @@ $font-contact-form-input-la: 1.2rem;
 //Skills
 $font-skills-title-la: 4rem;
 $font-skills-category-la: 2.2rem;
+//Languages
+$font-languages-title-la: 4rem;
+$font-languages-name-la: 2.2rem;
+$font-languages-proficiency-la: 1.3rem;
 //Projects
 $font-projects-title-la: 4rem;
 
@@ -77,6 +88,10 @@ $font-contact-form-button-ta: 1.3rem;
 $font-skills-title-ta: 3.4rem;
 $font-skills-category-ta: 1.8rem;
 $font-skills-table-text-ta: 1.15rem;
+//Languages
+$font-languages-title-ta: 3.4rem;
+$font-languages-name-ta: 1.8rem;
+$font-languages-proficiency-ta: 1.2rem;
 //Projects
 $font-projects-title-ta: 3.4rem;
 
@@ -93,6 +108,10 @@ $font-contact-form-button-ph: 1.4rem;
 $font-skills-title-ph: 4rem;
 $font-skills-category-ph: 2.2rem;
 $font-skills-table-text-ph: 1.6rem;
+//Languages
+$font-languages-title-ph: 4rem;
+$font-languages-name-ph: 1.7rem;
+$font-languages-proficiency-ph: 1.3rem;
 //Projects
 $font-projects-title-ph: 4rem;
 
@@ -111,6 +130,10 @@ $font-contact-form-button-ps: 1.2rem;
 $font-skills-title-ps: 3rem;
 $font-skills-category-ps: 1.9rem;
 $font-skills-table-text-ps: 1.3rem;
+//Languages
+$font-languages-title-ps: 3rem;
+$font-languages-name-ps: 1.9rem;
+$font-languages-proficiency-ps: 1.3rem;
 //Projects
 $font-projects-title-ps: 3rem;
 //Footer
