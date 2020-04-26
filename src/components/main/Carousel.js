@@ -47,7 +47,7 @@ const Carousel = () => (
       clickable={true}
       active={0}
       enableHeading={false}
-      currentFigureScale={1.8}
+      currentFigureScale={1.6}
       otherFigureScale={0.7}
       media={{
         '@media (min-width: 1680px)': {
