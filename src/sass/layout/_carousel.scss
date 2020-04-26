@@ -20,7 +20,8 @@
   );
 }
 
-[class*='coverflow__figure'] {
+[class*='coverflow__figure'], 
+[class*='coverflow__cover'] {
   opacity: 1 !important;
   z-index: -10 !important;
 }
