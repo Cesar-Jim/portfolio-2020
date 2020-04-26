@@ -49,6 +49,7 @@
     }
 
     @include respond(tablet) {
+      font-size: $font-skills-table-text-ta;
       line-height: 2.5rem;
     }
 

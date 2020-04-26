@@ -3,33 +3,33 @@
     &__main-container {
         display: flex;
         flex-direction: row;
-        width: 45%;
+        width: 70rem;
         justify-content: center;
         margin: 0 auto;
         padding: 2.8rem 5rem;
         
         @include respond(desktop){
-            width: 45%;
+            width: 65rem;
         }
         
         @include respond(laptop){
-            width: 58%;
+            width: 65rem;
         }
         
         @include respond(tablet){
             padding: 2rem 5rem;
-            width: 71%;
+            width: 60rem;
         }
 
         @include respond(phone){
             padding: 1.5rem 5rem;
-            width: 82%;
+            width: 53rem;
         }
 
         @include respond(phone-small){
             flex-direction: column;
             text-align: center;
-            padding: 2.4rem 5rem;
+            padding: 2.2rem 5rem;
             width: 100%;
         }
 
