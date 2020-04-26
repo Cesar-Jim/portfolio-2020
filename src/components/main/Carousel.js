@@ -47,7 +47,7 @@ const Carousel = () => (
       clickable={true}
       active={0}
       enableHeading={false}
-      currentFigureScale={1.6}
+      currentFigureScale={1.7}
       otherFigureScale={0.7}
       media={{
         '@media (min-width: 1680px)': {
@@ -76,19 +76,20 @@ const Carousel = () => (
         },
       }}
     >
-      <img src='/images/apps/tribe-app.webp' alt='Tribe App' />
-      <img src='/images/apps/zaplabs.webp' alt='Zaplabs' />
-      <img src='/images/apps/uva.webp' alt='Uva' />
-      <img src='/images/apps/natours.webp' alt='Natours' />
+      <img className="carousel-image" src='/images/apps/tribe-app.webp' alt='Tribe App' />
+      <img className="carousel-image" src='/images/apps/zaplabs.webp' alt='Zaplabs' />
+      <img className="carousel-image" src='/images/apps/uva.webp' alt='Uva' />
+      <img className="carousel-image" src='/images/apps/natours.webp' alt='Natours' />
       <img
+      className="carousel-image"
         src='/images/apps/cb-homes.webp'
         alt='Coldwell-Banker'
         style={{ backfaceVisibility: 'initial !important' }}
       />
-      <img src='/images/apps/jams.webp' alt='Jams' />
-      <img src='/images/apps/cap-store.webp' alt='Cortes Al Punto' />
-      <img src='/images/apps/blocipedia.webp' alt='Blocipedia' />
-      <img src='/images/apps/galaxy-shooter.webp' alt='Shooter' />
+      <img className="carousel-image" src='/images/apps/jams.webp' alt='Jams' />
+      <img className="carousel-image" src='/images/apps/cap-store.webp' alt='Cortes Al Punto' />
+      <img className="carousel-image" src='/images/apps/blocipedia.webp' alt='Blocipedia' />
+      <img className="carousel-image" src='/images/apps/galaxy-shooter.webp' alt='Shooter' />
     </Coverflow>
   </div>
 );

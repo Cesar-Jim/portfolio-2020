@@ -19,3 +19,8 @@
     $color-gray-dark-carousel
   );
 }
+
+[class*='coverflow__figure'] {
+  opacity: 1 !important;
+  z-index: 10000 !important;
+}
