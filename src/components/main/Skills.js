@@ -11,6 +11,7 @@ const Skills = () => (
             <td className='skills__table-cell1-row1'>
               <Skill
                 icon='/images/core.webp'
+                iconFallback='/images/core.png'
                 alt='Core'
                 category='Core'
                 content='JavaScript, HTML and CSS are the core technologies I work with
@@ -20,6 +21,7 @@ const Skills = () => (
             <td className='skills__table-cell2-row1'>
               <Skill
                 icon='/images/front-end.webp'
+                iconFallback='/images/front-end.png'
                 alt='Front-End'
                 category='Front-End'
                 content='I am familiar with ReactJS, Bootstrap, Sass, SemanticIU and know the basics of the AngularJS framework. For testing I have used Jasmine and Jest with Enzyme.'
@@ -28,6 +30,7 @@ const Skills = () => (
             <td className='skills__table-cell3-row1'>
               <Skill
                 icon='/images/back-end.webp'
+                iconFallback='/images/back-end.png'
                 alt='Back-End'
                 category='Back-End'
                 content='I have done database implementations using Firebase, MongoDB,
@@ -39,6 +42,7 @@ const Skills = () => (
             <td className='skills__table-cell1-row2'>
               <Skill
                 icon='/images/versioning.webp'
+                iconFallback='/images/versioning.png'
                 alt='Versioning'
                 category='Versioning'
                 content='I use Git and GitHub on almost a daily basis and feel very
@@ -48,6 +52,7 @@ const Skills = () => (
             <td className='skills__table-cell2-row2'>
               <Skill
                 icon='/images/design.webp'
+                iconFallback='/images/design.png'
                 alt='Design'
                 category='Design'
                 content='When it comes to design, my preferred tools are: Balsamiq for
@@ -57,6 +62,7 @@ const Skills = () => (
             <td className='skills__table-cell3-row2'>
               <Skill
                 icon='/images/teamwork.webp'
+                iconFallback='/images/teamwork.png'
                 alt='Teamwork'
                 category='Teamwork'
                 content='I am a great team player and remote worker. My goal is always to be considered a valuable team member. I normally use Slack, Hangouts and Zoom for conferencing.'

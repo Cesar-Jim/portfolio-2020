@@ -41,7 +41,7 @@ window.addEventListener('resize', numberOfDisplayedImages);
 const Carousel = () => (
   <div>
     <Coverflow
-      className='coverflow'
+      className="coverflow"
       displayQuantityOfSide={numberOfDisplayedImages()}
       enableScroll={false}
       clickable={true}
@@ -50,46 +50,86 @@ const Carousel = () => (
       currentFigureScale={1.7}
       otherFigureScale={0.7}
       media={{
-        '@media (min-width: 1680px)': {
-          width: '100%',
-          height: '600px',
+        "@media (min-width: 1680px)": {
+          width: "100%",
+          height: "600px",
         },
-        '@media (max-width: 1679.98px)': {
-          width: '100%',
-          height: '500px',
+        "@media (max-width: 1679.98px)": {
+          width: "100%",
+          height: "500px",
         },
-        '@media (max-width: 1199.98px)': {
-          width: '100%',
-          height: '480px',
+        "@media (max-width: 1199.98px)": {
+          width: "100%",
+          height: "480px",
         },
-        '@media (max-width: 767.98px)': {
-          width: '100%',
-          height: '460px',
+        "@media (max-width: 767.98px)": {
+          width: "100%",
+          height: "460px",
         },
-        '@media (max-width: 575.98px)': {
-          width: '100%',
-          height: '340px',
+        "@media (max-width: 575.98px)": {
+          width: "100%",
+          height: "340px",
         },
-        '@media (max-width: 319.98px)': {
-          width: '100%',
-          height: '260px',
+        "@media (max-width: 319.98px)": {
+          width: "100%",
+          height: "260px",
         },
       }}
     >
-      <img className="carousel-image" src='/images/apps/tribe-app.webp' alt='Tribe App' />
-      <img className="carousel-image" src='/images/apps/zaplabs.webp' alt='Zaplabs' />
-      <img className="carousel-image" src='/images/apps/uva.webp' alt='Uva' />
-      <img className="carousel-image" src='/images/apps/natours.webp' alt='Natours' />
       <img
-      className="carousel-image"
-        src='/images/apps/cb-homes.webp'
-        alt='Coldwell-Banker'
-        style={{ backfaceVisibility: 'initial !important' }}
+        className="carousel-image"
+        src="/images/apps/tribe-app.webp"
+        onError={() => "/images/apps/tribe-app.jpg"}
+        alt="Tribe App"
       />
-      <img className="carousel-image" src='/images/apps/jams.webp' alt='Jams' />
-      <img className="carousel-image" src='/images/apps/cap-store.webp' alt='Cortes Al Punto' />
-      <img className="carousel-image" src='/images/apps/blocipedia.webp' alt='Blocipedia' />
-      <img className="carousel-image" src='/images/apps/galaxy-shooter.webp' alt='Shooter' />
+      <img
+        className="carousel-image"
+        src="/images/apps/zaplabs.webp"
+        onError={() => "/images/apps/zaplabs.jpg"}
+        alt="Zaplabs"
+      />
+      <img
+        className="carousel-image"
+        src="/images/apps/uva.webp"
+        onError={() => "/images/apps/uva.jpg"}
+        alt="Uva"
+      />
+      <img
+        className="carousel-image"
+        src="/images/apps/natours.webp"
+        onError={() => "/images/apps/natours.jpg"}
+        alt="Natours"
+      />
+      <img
+        className="carousel-image"
+        src="/images/apps/cb-homes.webp"
+        onError={() => "/images/apps/cb-homes.jpg"}
+        alt="Coldwell-Banker"
+      />
+      <img
+        className="carousel-image"
+        src="/images/apps/jams.webp"
+        onError={() => "/images/apps/jams.jpg"}
+        alt="Jams"
+      />
+      <img
+        className="carousel-image"
+        src="/images/apps/cap-store.webp"
+        onError={() => "/images/apps/cap-store.jpg"}
+        alt="Cortes Al Punto"
+      />
+      <img
+        className="carousel-image"
+        src="/images/apps/blocipedia.webp"
+        onError={() => "/images/apps/blocipedia.jpg"}
+        alt="Blocipedia"
+      />
+      <img
+        className="carousel-image"
+        src="/images/apps/galaxy-shooter.webp"
+        onError={() => "/images/apps/galaxy-shooter.jpg"}
+        alt="Shooter"
+      />
     </Coverflow>
   </div>
 );

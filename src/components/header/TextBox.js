@@ -35,11 +35,11 @@ const TextBox = () => {
       </div>
       <div className='text-box__social-container'>
         <a href='https://github.com/Cesar-Jim' target='blank'>
-          <img
-            className='text-box__social-container--github'
-            src='/images/github.webp'
-            alt='Github'
-          />
+          <img 
+          className='text-box__social-container--github' 
+          src="/images/github.webp" 
+          onError={() => '/images/github.png'}
+          alt="Github Link" />
         </a>
         <a
           href='https://www.linkedin.com/in/cesar-jimenez-ribeiro/'
@@ -48,7 +48,8 @@ const TextBox = () => {
           <img
             className='text-box__social-container--linkedin'
             src='/images/linkedin.webp'
-            alt='LinkedIn'
+            onError={() => '/images/linkedin.png'}
+            alt='LinkedIn Link'
           />
         </a>
       </div>
