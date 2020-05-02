@@ -6,10 +6,13 @@
 FileETag none
 # AddOutputFilterByType is now deprecated by Apache. Use mod_filter in the future.
 AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css application/xml application/xhtml+xml application/rss+xml application/javascript application/x-javascript
+
 # Enable expiration control
 ExpiresActive On
+
 # Default expiration: 1 hour after request
 ExpiresDefault "now plus 1 hour"
+
 # CSS and JS expiration: 1 week after request
 ExpiresByType text/css "now plus 1 week"
 ExpiresByType application/javascript "now plus 1 week"
@@ -53,3 +56,13 @@ ExpiresByType video/mp4 "now plus 1 month"
 ExpiresByType video/quicktime "now plus 1 month"
 ExpiresByType video/x-la-asf "now plus 1 month"
 ExpiresByType video/x-ms-asf "now plus 1 month"
+
+# Cache Control and Enable CORS
+<FilesMatch "\.(js|css|jpg|gif|png|pdf|swf|svg|svgz|ico|ttf|ttc|otf|eot|woff|woff2|webp)$">
+ <IfModule mod_headers.c>
+    ExpiresActive On
+    ExpiresDefault  "access plus 1 month"
+    Header set Cache-Control "public, immutable, max-age=2628000, s-maxage=2628000"
+    Header set Access-Control-Allow-Origin "*"
+ </IfModule>
+</FilesMatch>
