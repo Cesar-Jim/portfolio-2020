@@ -37,8 +37,7 @@ const TextBox = () => {
         <a href='https://github.com/Cesar-Jim' target='blank'>
           <img 
           className='text-box__social-container--github' 
-          src="/images/github.webp" 
-          onError={() => '/images/github.png'}
+          src="/images/github.png" 
           alt="Github Link" />
         </a>
         <a
@@ -47,8 +46,7 @@ const TextBox = () => {
         >
           <img
             className='text-box__social-container--linkedin'
-            src='/images/linkedin.webp'
-            onError={() => '/images/linkedin.png'}
+            src='/images/linkedin.png'
             alt='LinkedIn Link'
           />
         </a>

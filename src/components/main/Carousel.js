@@ -78,56 +78,47 @@ const Carousel = () => (
     >
       <img
         className="carousel-image"
-        src="/images/apps/tribe-app.webp"
-        onError={() => "/images/apps/tribe-app.jpg"}
+        src="/images/apps/tribe-app.jpg"
         alt="Tribe App"
       />
       <img
         className="carousel-image"
-        src="/images/apps/zaplabs.webp"
-        onError={() => "/images/apps/zaplabs.jpg"}
+        src="/images/apps/zaplabs.jpg"
         alt="Zaplabs"
       />
       <img
         className="carousel-image"
-        src="/images/apps/uva.webp"
-        onError={() => "/images/apps/uva.jpg"}
+        src="/images/apps/uva.jpg"
         alt="Uva"
       />
       <img
         className="carousel-image"
-        src="/images/apps/natours.webp"
-        onError={() => "/images/apps/natours.jpg"}
+        src="/images/apps/natours.jpg"
         alt="Natours"
       />
       <img
         className="carousel-image"
-        src="/images/apps/cb-homes.webp"
-        onError={() => "/images/apps/cb-homes.jpg"}
+        src="/images/apps/cb-homes.jpg"
         alt="Coldwell-Banker"
       />
       <img
         className="carousel-image"
-        src="/images/apps/jams.webp"
-        onError={() => "/images/apps/jams.jpg"}
+        src="/images/apps/jams.jpg"
         alt="Jams"
       />
       <img
         className="carousel-image"
-        src="/images/apps/cap-store.webp"
-        onError={() => "/images/apps/cap-store.jpg"}
+        src="/images/apps/cap-store.jpg"
         alt="Cortes Al Punto"
       />
       <img
         className="carousel-image"
-        src="/images/apps/blocipedia.webp"
-        onError={() => "/images/apps/blocipedia.jpg"}
+        src="/images/apps/blocipedia.jpg"
         alt="Blocipedia"
       />
       <img
         className="carousel-image"
-        src="/images/apps/galaxy-shooter.webp"
-        onError={() => "/images/apps/galaxy-shooter.jpg"}
+        src="/images/apps/galaxy-shooter.jpg"
         alt="Shooter"
       />
     </Coverflow>

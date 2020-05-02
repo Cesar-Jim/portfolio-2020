@@ -7,8 +7,7 @@ const Heading = () => {
       <Particles />
       <img 
         className='heading__image' 
-        src="/images/cesar.webp" 
-        onError={() =>'/images/cesar.png'}
+        src="/images/cesar.png" 
         alt="Cesar Jimenez" />
       <h1 className='heading__title'>
         <span className='heading__title--main'>Cesar Jimenez</span>
