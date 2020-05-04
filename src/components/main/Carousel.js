@@ -1,5 +1,5 @@
-import React from 'react';
-import Coverflow from 'react-coverflow';
+import React from "react";
+import Coverflow from "react-coverflow";
 
 const numberOfDisplayedImages = () => {
   const windowWidth = window.innerWidth;
@@ -22,7 +22,7 @@ const numberOfDisplayedImages = () => {
   }
 
   if (windowWidth >= 576 && windowWidth < 768) {
-    displayQuantityOfSide =1;
+    displayQuantityOfSide = 1;
   }
 
   if (windowWidth >= 320 && windowWidth < 576) {
@@ -36,7 +36,7 @@ const numberOfDisplayedImages = () => {
   return displayQuantityOfSide;
 };
 
-window.addEventListener('resize', numberOfDisplayedImages);
+window.addEventListener("resize", numberOfDisplayedImages);
 
 const Carousel = () => (
   <div>
@@ -47,7 +47,7 @@ const Carousel = () => (
       clickable={true}
       active={0}
       enableHeading={true}
-      currentFigureScale={1.7}
+      currentFigureScale={1.8}
       otherFigureScale={0.6}
       media={{
         "@media (min-width: 1680px)": {
@@ -86,11 +86,7 @@ const Carousel = () => (
         src="/images/apps/zaplabs.jpg"
         alt="Zaplabs"
       />
-      <img
-        className="carousel-image"
-        src="/images/apps/uva.jpg"
-        alt="Uva"
-      />
+      <img className="carousel-image" src="/images/apps/uva.jpg" alt="Uva" />
       <img
         className="carousel-image"
         src="/images/apps/natours.jpg"
@@ -101,11 +97,7 @@ const Carousel = () => (
         src="/images/apps/cb-homes.jpg"
         alt="Coldwell-Banker"
       />
-      <img
-        className="carousel-image"
-        src="/images/apps/jams.jpg"
-        alt="Jams"
-      />
+      <img className="carousel-image" src="/images/apps/jams.jpg" alt="Jams" />
       <img
         className="carousel-image"
         src="/images/apps/cap-store.jpg"

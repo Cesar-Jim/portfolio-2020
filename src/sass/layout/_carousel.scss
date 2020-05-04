@@ -1,15 +1,15 @@
-[class*='coverflow__text'] {
+[class*="coverflow__text"] {
   background: rgba(255, 255, 255, 1);
   color: rgba(42, 46, 57, 1);
   border-top: 2px solid white;
 }
 
-[class*='coverflow__figure'] {
+[class*="coverflow__figure"] {
   backface-visibility: visible !important;
   opacity: 1 !important;
 }
 
-[class*='coverflow__coverflow'] {
+[class*="coverflow__coverflow"] {
   backface-visibility: visible !important;
   background-image: linear-gradient(
     to bottom,
@@ -18,17 +18,21 @@
     $color-white-carousel,
     $color-gray-light-carousel,
     $color-gray-dark-carousel
-    );
-  }
-  
-  [class*='coverflow__text'] {
-    background-color: $color-background-dark;
-    border: none;
-    color: $color-white-carousel;
-    font-family: $font-family-primary;
-    font-size:  1rem;
-    font-weight: 700;
-    height: 2.5rem;
-    margin: 0;
-    opacity: .95;
-  }
+  );
+}
+
+[class*="coverflow__text"] {
+  background-color: $color-background-dark;
+  border: none;
+  color: $color-white-carousel;
+  font-family: $font-family-primary;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 2.5rem;
+  margin: 0;
+  opacity: 0.95;
+}
+
+img {
+  z-index: -10;
+}
