@@ -46,9 +46,9 @@ const Carousel = () => (
       enableScroll={false}
       clickable={true}
       active={0}
-      enableHeading={false}
+      enableHeading={true}
       currentFigureScale={1.7}
-      otherFigureScale={0.7}
+      otherFigureScale={0.6}
       media={{
         "@media (min-width: 1680px)": {
           width: "100%",
@@ -119,7 +119,7 @@ const Carousel = () => (
       <img
         className="carousel-image"
         src="/images/apps/galaxy-shooter.jpg"
-        alt="Shooter"
+        alt="Unity Game"
       />
     </Coverflow>
   </div>

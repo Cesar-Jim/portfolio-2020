@@ -20,16 +20,66 @@
     }
   }
 
+  &__glitch {
+    position: absolute;
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: visible;
+  }
+
   &__image {
-    background-color: rgba($color-font-dark, 0.3);
+    background-color: rgba($color-primary, 0.25);
+    background-image: url("/images/cesar.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 50%;
-    box-shadow: 0 0 30px rgba(#000, 0.5);
+    box-shadow: 0 0 40px rgba($color-primary, 0.55);
     cursor: default;
     height: 17rem;
-    margin: 2rem 0 -1.5rem 0;
+    margin: 0;
     opacity: 0.85;
+    position: absolute;
     width: 17rem;
     z-index: 2;
+
+    &:nth-child(n + 2) {
+      opacity: 0;
+    }
+
+    &:nth-child(n + 2) {
+      animation-duration: 4.5s;
+      animation-delay: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    &:nth-child(2) {
+      background-color: transparent;
+      background-blend-mode: none;
+      animation-name: glitch-anim-1;
+    }
+
+    &:nth-child(3) {
+      background-color: transparent;
+      background-blend-mode: none;
+      animation-name: glitch-anim-2;
+    }
+
+    &:nth-child(4) {
+      background-color: transparent;
+      background-blend-mode: none;
+      animation-name: glitch-anim-3;
+    }
+
+    &:nth-child(5) {
+      background-color: rgba($color-primary, 1);
+      background-blend-mode: overlay;
+      animation-name: glitch-anim-flash;
+    }
 
     @include respond(desktop) {
       height: 14rem;
@@ -52,9 +102,30 @@
     cursor: default;
     display: flex;
     flex-direction: column;
+    margin: 19rem 0 0 0;
+
+    @include respond(desktop) {
+      margin: 17rem 0 0 0;
+    }
+
+    @include respond(laptop) {
+      margin: 16.4rem 0 0 0;
+    }
+
+    @include respond(tablet) {
+      margin: 14rem 0 0 0;
+    }
+
+    @include respond(phone) {
+      margin: 14rem 0 0 0;
+    }
+
+    @include respond(phone-small) {
+      margin: 14rem 0 0 0;
+    }
 
     &--main {
-      font-family: 'Crimson Text', sans-serif;
+      font-family: "Crimson Text", sans-serif;
       font-size: $font-heading-main-title-db;
       font-weight: 400;
       z-index: 2;
@@ -73,7 +144,7 @@
     }
 
     &--sub {
-      font-family: 'Open Sans', serif;
+      font-family: "Open Sans", serif;
       font-size: $font-heading-sub-title-db;
       font-weight: 400;
       margin: -3.5rem 0 0 0;
