@@ -45,6 +45,7 @@
     position: absolute;
     width: 17rem;
     z-index: 2;
+    top: 0;
 
     &:nth-child(n + 2) {
       opacity: 0;
