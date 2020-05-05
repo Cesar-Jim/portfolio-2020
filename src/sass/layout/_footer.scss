@@ -28,11 +28,22 @@
 
   &__copyright {
     font-size: $font-footer-copyright-db;
-    margin: 1.5rem 0 0 0;
+    margin: 1rem 0 0 0;
     text-align: center;
 
     @include respond(phone-small) {
       font-size: $font-footer-copyright-ps;
+    }
+  }
+
+  &__positiveSSL {
+    display: flex;
+    justify-content: center;
+    margin: 7rem 0 3.5rem 0;
+
+    &--logo {
+      height: 23px;
+      width: 130px;
     }
   }
 }
