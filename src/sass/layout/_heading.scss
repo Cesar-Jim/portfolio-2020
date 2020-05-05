@@ -30,6 +30,10 @@
     overflow: visible;
     position: absolute;
     top: 6rem;
+
+    @include respond(tablet) {
+      top: 4.5rem;
+    }
   }
 
   &__image {
@@ -90,14 +94,18 @@
     }
 
     @include respond(tablet) {
-      height: 12rem;
-      width: 12rem;
+      height: 13rem;
+      width: 13rem;
+    }
+
+    @include respond(phone) {
+      height: 13rem;
+      width: 13rem;
     }
 
     @include respond(phone-small) {
-      height: 9.4rem;
-      margin: 2rem 0 0 0;
-      width: 9.4rem;
+      height: 12rem;
+      width: 12rem;
     }
   }
 
@@ -121,10 +129,6 @@
 
     @include respond(phone) {
       margin: 14rem 0 0 0;
-    }
-
-    @include respond(phone-small) {
-      //padding: -4rem 0 0 0;
     }
 
     &--main {

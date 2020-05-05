@@ -76,43 +76,15 @@ const Carousel = () => (
         },
       }}
     >
-      <img
-        className="carousel-image"
-        src="/images/apps/tribe-app.jpg"
-        alt="Tribe App"
-      />
-      <img
-        className="carousel-image"
-        src="/images/apps/zaplabs.jpg"
-        alt="Zaplabs"
-      />
-      <img className="carousel-image" src="/images/apps/uva.jpg" alt="Uva" />
-      <img
-        className="carousel-image"
-        src="/images/apps/natours.jpg"
-        alt="Natours"
-      />
-      <img
-        className="carousel-image"
-        src="/images/apps/cb-homes.jpg"
-        alt="Coldwell-Banker"
-      />
-      <img className="carousel-image" src="/images/apps/jams.jpg" alt="Jams" />
-      <img
-        className="carousel-image"
-        src="/images/apps/cap-store.jpg"
-        alt="Cortes Al Punto"
-      />
-      <img
-        className="carousel-image"
-        src="/images/apps/blocipedia.jpg"
-        alt="Blocipedia"
-      />
-      <img
-        className="carousel-image"
-        src="/images/apps/galaxy-shooter.jpg"
-        alt="Unity Game"
-      />
+      <img src="/images/apps/tribe-app.jpg" alt="Tribe App" />
+      <img src="/images/apps/zaplabs.jpg" alt="Zaplabs" />
+      <img src="/images/apps/uva.jpg" alt="Uva" />
+      <img src="/images/apps/natours.jpg" alt="Natours" />
+      <img src="/images/apps/cb-homes.jpg" alt="Coldwell-Banker" />
+      <img src="/images/apps/jams.jpg" alt="Jams" />
+      <img src="/images/apps/cap-store.jpg" alt="Cortes Al Punto" />
+      <img src="/images/apps/blocipedia.jpg" alt="Blocipedia" />
+      <img src="/images/apps/galaxy-shooter.jpg" alt="Unity Game" />
     </Coverflow>
   </div>
 );
