@@ -7,19 +7,39 @@ const Heading = () => {
       <Particles />
       <div className="heading__glitch">
         <div className="heading__image">
-          <span class="background-image" role="img" aria-label="Cesar"></span>
+          <span
+            className="background-image"
+            role="img"
+            aria-label="Cesar"
+          ></span>
         </div>
         <div className="heading__image">
-          <span class="background-image" role="img" aria-label="Cesar"></span>
+          <span
+            className="background-image"
+            role="img"
+            aria-label="Cesar"
+          ></span>
         </div>
         <div className="heading__image">
-          <span class="background-image" role="img" aria-label="Cesar"></span>
+          <span
+            className="background-image"
+            role="img"
+            aria-label="Cesar"
+          ></span>
         </div>
         <div className="heading__image">
-          <span class="background-image" role="img" aria-label="Cesar"></span>
+          <span
+            className="background-image"
+            role="img"
+            aria-label="Cesar"
+          ></span>
         </div>
         <div className="heading__image">
-          <span class="background-image" role="img" aria-label="Cesar"></span>
+          <span
+            className="background-image"
+            role="img"
+            aria-label="Cesar"
+          ></span>
         </div>
       </div>
       <h1 className="heading__title">

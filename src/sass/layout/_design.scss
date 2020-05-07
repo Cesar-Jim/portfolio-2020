@@ -1,0 +1,185 @@
+.design {
+  &__container {
+    align-items: center;
+    background-color: $color-gray-background-responsive-section;
+    display: flex;
+    flex-direction: row;
+    height: 90rem;
+    justify-content: center;
+
+    @include respond(desktop) {
+      height: 115rem;
+    }
+
+    @include respond(laptop) {
+      height: 100rem;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+      height: 100rem;
+    }
+
+    &--imageBox {
+      display: flex;
+      height: 100%;
+      justify-content: left;
+      position: relative;
+      width: 40%;
+    }
+
+    &--textBox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 60%;
+      height: 100%;
+
+      @include respond(desktop) {
+        margin: 48rem 0 0 0;
+      }
+
+      @include respond(laptop) {
+        margin: 44rem 0 0 0;
+      }
+
+      @include respond(tablet) {
+        margin: 40rem 0 0 0;
+      }
+
+      @include respond(phone) {
+        margin: -52rem 0 0 0;
+        width: 90%;
+      }
+
+      @include respond(phone-small) {
+        margin: -75rem 0 0 0;
+        width: 90%;
+      }
+    }
+  }
+  &__image {
+    align-self: center;
+    height: 40rem;
+    left: 10rem;
+    position: absolute;
+    top: -10rem;
+    transform: rotate(-4deg);
+
+    @include respond(desktop) {
+      height: 38rem;
+    }
+
+    @include respond(desktop) {
+      height: 35rem;
+    }
+
+    @include respond(tablet) {
+      height: 33rem;
+    }
+
+    @include respond(phone) {
+      height: 29rem;
+      left: -12rem;
+      position: absolute;
+      top: -8rem;
+    }
+
+    @include respond(phone-small) {
+      height: 16.5rem;
+      left: -7.2rem;
+      position: absolute;
+      top: -5rem;
+    }
+  }
+}
+
+.textBox__title {
+  font-family: $font-family-primary;
+  font-size: $font-design-title-db;
+  color: $color-white-carousel;
+  margin: 8rem 0 6rem 0;
+  text-align: left;
+  width: 62%;
+
+  @include respond(desktop) {
+    font-size: $font-design-title-de;
+    width: 60%;
+  }
+
+  @include respond(laptop) {
+    font-size: $font-design-title-la;
+    width: 70%;
+  }
+
+  @include respond(tablet) {
+    font-size: $font-design-title-ta;
+    width: 70%;
+  }
+
+  @include respond(phone) {
+    font-size: $font-design-title-ph;
+    width: 85%;
+  }
+
+  @include respond(phone-small) {
+    font-size: $font-design-title-ps;
+    width: 80%;
+  }
+}
+
+.title {
+  font-weight: bolder;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.85);
+
+  @include respond(phone) {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    word-spacing: 5px;
+  }
+
+  @include respond(phone-small) {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+  }
+}
+
+.textBox__text {
+  font-family: $font-family-primary;
+  font-size: $font-design-text-db;
+  font-weight: 400;
+  line-height: 4.4rem;
+  text-align: justify;
+  width: 62%;
+  word-spacing: -1.5px;
+
+  @include respond(desktop) {
+    font-size: $font-design-text-de;
+    line-height: 3.8rem;
+    width: 60%;
+  }
+
+  @include respond(laptop) {
+    font-size: $font-design-text-la;
+    line-height: 3.4rem;
+    width: 70%;
+  }
+
+  @include respond(tablet) {
+    font-size: $font-design-text-ta;
+    line-height: 3rem;
+    width: 70%;
+  }
+
+  @include respond(phone) {
+    font-size: $font-design-text-ph;
+    line-height: 3.6rem;
+    width: 85%;
+    word-spacing: -1px;
+  }
+
+  @include respond(phone-small) {
+    font-size: $font-design-text-ps;
+    line-height: 3rem;
+    width: 80%;
+    word-spacing: -1.5px;
+  }
+}

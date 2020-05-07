@@ -10,9 +10,9 @@ desktop-big       = db ( 1680px - +         )
 
 // ********************************************** FONTS
 // FONT FAMILIES
-$font-family-primary: 'Open Sans', sans-serif;
-$font-family-secondary: 'Crimson Text', serif;
-$font-family-header: 'PT Sans', sans-serif;
+$font-family-primary: "Open Sans", sans-serif;
+$font-family-secondary: "Crimson Text", serif;
+$font-family-header: "PT Sans", sans-serif;
 
 // ********************************************** DESKTOP-BIG (DEFAULT)
 //Header
@@ -33,6 +33,9 @@ $font-skills-table-text-db: 1.5rem;
 $font-languages-title-db: 4.8rem;
 $font-languages-name-db: 3rem;
 $font-languages-proficiency-db: 1.6rem;
+//Design
+$font-design-title-db: 4rem;
+$font-design-text-db: 1.8rem;
 //Projects
 $font-projects-title-db: 4.8rem;
 //Footer
@@ -58,6 +61,9 @@ $font-skills-table-text-de: 1.5rem;
 $font-languages-title-de: 4.4rem;
 $font-languages-name-de: 2.4rem;
 $font-languages-proficiency-de: 1.5rem;
+//Design
+$font-design-title-de: 3.4rem;
+$font-design-text-de: 1.8rem;
 
 // ********************************************** LAPTOP
 //Header
@@ -70,6 +76,9 @@ $font-skills-category-la: 2.2rem;
 $font-languages-title-la: 4rem;
 $font-languages-name-la: 2.2rem;
 $font-languages-proficiency-la: 1.3rem;
+//Design
+$font-design-title-la: 3.2rem;
+$font-design-text-la: 1.7rem;
 //Projects
 $font-projects-title-la: 4rem;
 
@@ -92,6 +101,9 @@ $font-skills-table-text-ta: 1.3rem;
 $font-languages-title-ta: 3.4rem;
 $font-languages-name-ta: 1.8rem;
 $font-languages-proficiency-ta: 1.3rem;
+//Design
+$font-design-title-ta: 2.8rem;
+$font-design-text-ta: 1.6rem;
 //Projects
 $font-projects-title-ta: 3.4rem;
 
@@ -112,6 +124,9 @@ $font-skills-table-text-ph: 1.6rem;
 $font-languages-title-ph: 4rem;
 $font-languages-name-ph: 2rem;
 $font-languages-proficiency-ph: 1.4rem;
+//Design
+$font-design-title-ph: 2.8rem;
+$font-design-text-ph: 1.5rem;
 //Projects
 $font-projects-title-ph: 4rem;
 
@@ -134,6 +149,9 @@ $font-skills-table-text-ps: 1.3rem;
 $font-languages-title-ps: 3rem;
 $font-languages-name-ps: 1.9rem;
 $font-languages-proficiency-ps: 1.3rem;
+//Design
+$font-design-title-ps: 2.4rem;
+$font-design-text-ps: 1.3rem;
 //Projects
 $font-projects-title-ps: 3rem;
 //Footer
@@ -171,3 +189,5 @@ $color-background-dark: #2a2e39;
 $color-white-carousel: #ffffff;
 $color-gray-light-carousel: #a1a3a881;
 $color-gray-dark-carousel: #2a2e3971;
+
+$color-gray-background-responsive-section: #e8e8e8;
