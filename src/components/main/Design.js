@@ -18,14 +18,14 @@ const Design = () => {
           <p>
             Responsive websites are meant to adapt to the devices they are being
             displayed on. Whether you are using a desktop or a smartphone, the
-            website is supposed to adjust and change its content and layout
+            website is expected to adjust and change its content and layout
             accordingly.
           </p>
           <br />
           <p>
             Responsiveness is one of the main aspects I keep in mind when
-            designing any website. Nonetheless, the following best practices and
-            principles are very important in my creative process as well:
+            designing any website alongside the following best practices and
+            principles which are also very important during my creative process:
           </p>
           <br />
           <p>
