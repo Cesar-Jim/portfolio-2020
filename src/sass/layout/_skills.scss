@@ -45,7 +45,7 @@
     }
 
     @include respond(laptop) {
-      line-height: 2.5rem;
+      line-height: 3rem;
     }
 
     @include respond(tablet) {
@@ -64,7 +64,7 @@
     }
   }
 
-  [class*='__table-row'] {
+  [class*="__table-row"] {
     display: flex;
     flex-direction: row;
 
@@ -73,7 +73,7 @@
     }
   }
 
-  [class*='__table-cell'] {
+  [class*="__table-cell"] {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -218,7 +218,7 @@
       word-spacing: -1.5px;
     }
 
-    @include respond(phone) {
+    @include respond(phone-small) {
       padding: 0 4.5rem 0 4.5rem;
       word-spacing: -1.5px;
     }

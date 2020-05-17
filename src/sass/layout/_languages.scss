@@ -1,39 +1,143 @@
 .languages {
+  &__container {
+    background-color: $color-font-light;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 14rem 0 46rem 0;
+    z-index: -2;
 
-    &__container {
-        margin: 7rem 0 22rem 0;
-
+    @include respond(desktop) {
+      margin: 22rem 0 50rem 0;
     }
 
-    &__title{
-        color: $color-font-dark;
-        font-family: $font-family-header;
-        font-size: $font-skills-title-db;
-        font-weight: 100;
-        margin: 8rem 0 8rem 0;
-        text-align: center;
-        
-        @include respond(desktop){
-            font-size: $font-languages-title-de;
-        }
-        
-        @include respond(laptop){
-            font-size: $font-languages-title-la;
-        }
-        
-        @include respond(tablet){
-            font-size: $font-languages-title-ta;
-            margin: 8rem 0 5rem 0;
-        }
-        
-        @include respond(phone){
-            font-size: $font-languages-title-ph;
-            margin: 8rem 0 5rem 0;  
-        }
-
-        @include respond(phone-small){
-            font-size: $font-languages-title-ps;
-            margin: 8rem 0 3rem 0;  
-        }
+    @include respond(laptop) {
+      margin: 20rem 0 60rem 0;
     }
+
+    @include respond(tablet) {
+      margin: 20rem 0 65rem 0;
+    }
+
+    @include respond(phone) {
+      margin: 16rem 0 65rem 0;
+    }
+
+    @include respond(phone-small) {
+      margin: 20rem 0 75rem 0;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -8px 8px 16px rgba(0, 0, 0, 0.4);
+    color: $color-gray-medium;
+    font-family: $font-family-header;
+    font-size: $font-languages-title-db;
+    height: 30rem;
+    letter-spacing: 1.2rem;
+    min-height: 100%;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    transform: rotate(-85deg);
+    width: 75rem;
+    z-index: -1;
+
+    @include respond(desktop) {
+      font-size: $font-languages-title-de;
+      width: 65rem;
+    }
+
+    @include respond(laptop) {
+      font-size: $font-languages-title-la;
+      margin: 4rem 0 3rem 0;
+      width: 62rem;
+    }
+
+    @include respond(tablet) {
+      font-size: $font-languages-title-ta;
+      margin: 8rem 0 3rem 0;
+    }
+
+    @include respond(phone) {
+      font-size: $font-languages-title-ph;
+      margin: 8rem 0 3rem 0;
+    }
+
+    @include respond(phone-small) {
+      font-size: $font-languages-title-ps;
+      margin: 8rem 0 3rem 0;
+    }
+  }
+
+  &__collection {
+    text-align: right;
+    transform: rotate(5deg);
+    width: 44rem;
+    height: 55rem;
+
+    @include respond(desktop) {
+      margin: -5rem 0 0 -29.5rem;
+      width: 61rem;
+      height: 51rem;
+    }
+
+    @include respond(laptop) {
+      margin: -2rem 0 0 -35.5rem;
+      width: 60rem;
+      height: 43rem;
+    }
+
+    @include respond(tablet) {
+      margin: 6rem 0 0 -17.5rem;
+      width: 60rem;
+      height: 33rem;
+    }
+
+    @include respond(phone) {
+      margin: 8rem 0 8rem -10.5rem;
+      width: 60rem;
+      height: 24rem;
+    }
+
+    @include respond(phone-small) {
+      margin: -1rem 0 0 -25.5rem;
+      width: 60rem;
+      height: 22rem;
+    }
+  }
+}
+
+.main-title {
+  margin: 2rem 0 0 0;
+  letter-spacing: 1.6rem;
+
+  @include respond(desktop) {
+    letter-spacing: 1.2rem;
+    margin: 1.5rem 0 0 0;
+  }
+
+  @include respond(laptop) {
+    letter-spacing: 1rem;
+    margin: 1.5rem 0 0 0;
+  }
+
+  @include respond(tablet) {
+    letter-spacing: 1rem;
+    margin: 2rem 0 0 0;
+  }
+
+  @include respond(phone) {
+    letter-spacing: 0.6rem;
+    margin: 2rem 0 0 0;
+  }
+
+  @include respond(phone-small) {
+    letter-spacing: 0.6rem;
+    margin: 0.5rem 0 0 0;
+  }
 }
