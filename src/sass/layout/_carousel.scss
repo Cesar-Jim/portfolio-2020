@@ -19,14 +19,14 @@
 }
 
 [class*="coverflow__text"] {
-  background-color: $color-call-to-action;
+  background-color: $color-call-to-action !important;
   color: $color-white-carousel;
-  font-family: $font-family-primary;
-  font-size: 1.4rem;
+  font-family: $font-family-primary !important;
+  font-size: 1.3rem;
   font-weight: 700;
   height: 3rem;
   margin: 0;
-  opacity: 1;
+  opacity: 1 !important;
 
   @include respond(desktop) {
     font-size: 1.2rem;

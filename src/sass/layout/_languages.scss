@@ -12,7 +12,7 @@
     }
 
     @include respond(laptop) {
-      margin: 10rem 0 50rem 0;
+      margin: 12rem 0 50rem 0;
     }
 
     @include respond(tablet) {
@@ -20,7 +20,7 @@
     }
 
     @include respond(phone) {
-      margin: 10rem 0 50rem 0;
+      margin: 6rem 0 50rem 0;
     }
 
     @include respond(phone-small) {
@@ -91,7 +91,7 @@
     }
 
     @include respond(phone) {
-      margin: 8rem 0 8rem -12.5rem;
+      margin: 6rem 0 10rem -13.5rem;
       height: 26rem;
     }
 
@@ -104,7 +104,7 @@
 
 .main-title {
   margin: -6rem 0 0 0;
-  letter-spacing: 0.6rem;
+  letter-spacing: 0.4rem;
 
   @include respond(desktop) {
     margin: -6rem 0 0 0;

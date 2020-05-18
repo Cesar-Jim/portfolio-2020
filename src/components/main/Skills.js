@@ -3,7 +3,7 @@ import Skill from "./Skill";
 
 const Skills = () => (
   <div className="skills">
-    <h2 className="skills__title">Skills Summary</h2>
+    <h2 className="skills__title">Skills</h2>
     <div className="skills__table-box">
       <table className="skills__table">
         <tbody className="skills__table-body">
