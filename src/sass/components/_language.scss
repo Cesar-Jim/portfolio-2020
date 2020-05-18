@@ -39,6 +39,7 @@
       &__name {
         font-family: $font-family-primary;
         font-size: $font-languages-name-db;
+        margin: 0 0.25rem 0 0;
 
         @include respond(desktop) {
           font-size: $font-languages-name-de;
@@ -64,7 +65,7 @@
       &__proficiency {
         font-family: $font-family-primary;
         font-size: $font-languages-proficiency-db;
-        margin: 0 0 0 0.1rem;
+        margin: 0 0.35rem 0 0;
 
         @include respond(desktop) {
           font-size: $font-languages-proficiency-de;
@@ -90,6 +91,7 @@
       &__level {
         align-self: flex-end;
         display: flex;
+        margin: -0.8rem 0 1.2rem 0;
       }
 
       &__spheres-container {
@@ -103,20 +105,8 @@
 }
 
 .language__spheres-container {
-  @include respond(phone-small) {
-    justify-content: center;
-    margin: 1.2rem 0 0 0;
-  }
-
-  @include respond(phone) {
-    justify-content: center;
-    margin: -1rem 0 0 0;
-  }
-
-  @include respond(phone-small) {
-    justify-content: center;
-    margin: 1rem 0 0 0;
-  }
+  justify-content: center;
+  margin: 0 0 0 0;
 }
 
 .sphere {
@@ -127,7 +117,7 @@
 
   &:first-child,
   &:last-child {
-    margin: 1.5rem 0.1rem 0 0.45rem;
+    margin: 1.5rem 0.35rem 0 0.35rem;
 
     @include respond(phone-small) {
       margin: 0 0.35rem 0 0.35rem;
