@@ -4,7 +4,7 @@ import Carousel from "./Carousel";
 const Projects = () => {
   return (
     <div className="projects">
-      <h2 className="projects__title">My Work On Projects </h2>
+      <h2 className="projects__title">Work</h2>
       <Carousel />
     </div>
   );

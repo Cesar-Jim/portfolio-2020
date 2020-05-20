@@ -3,22 +3,27 @@
 
   &__title {
     background-color: $color-gray-background-responsive-section;
-    color: $color-font-dark;
+    color: $color-gray-medium;
     font-family: $font-family-primary;
     font-size: $font-projects-title-db;
-    font-weight: 400;
+    font-weight: 700;
     margin: 0 0 0rem 0;
     padding: 10rem 0 6rem 0;
     text-align: center;
+    text-transform: uppercase;
     z-index: 2;
 
-    @include respond(tablet) {
-      font-size: $font-projects-title-ta;
+    @include respond(desktop) {
+      font-size: $font-projects-title-de;
     }
 
     @include respond(laptop) {
       padding: 16rem 0 0 0;
       font-size: $font-projects-title-la;
+    }
+
+    @include respond(tablet) {
+      font-size: $font-projects-title-ta;
     }
 
     @include respond(phone) {
