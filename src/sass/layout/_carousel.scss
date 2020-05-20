@@ -1,5 +1,6 @@
 [class*="coverflow__figure"] {
   backface-visibility: initial !important;
+  -webkit-backface-visibility: initial !important;
   opacity: 1 !important;
 }
 
